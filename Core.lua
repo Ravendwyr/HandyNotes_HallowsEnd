@@ -143,7 +143,7 @@ end
 local options = {
 	type = "group",
 	name = "Hallow's End",
-	desc = "Hallow's End",
+	desc = "Hallow's End candy bucket locations.",
 	get = function(info) return db[info[#info]] end,
 	set = function(info, v)
 		db[info[#info]] = v
@@ -153,30 +153,31 @@ local options = {
 		desc = {
 			name = "These settings control the look and feel of the icon.",
 			type = "description",
-			order = 0,
+			order = 1,
 		},
 		completed = {
 			name = "Show completed",
-			desc = "Show waypoints for lore you've already found?",
+			desc = "Show icons for candy buckets you have already visited.",
 			type = "toggle",
+			width = "double",
 			arg = "completed",
-			order = 10,
+			order = 2,
 		},
 		icon_scale = {
 			type = "range",
 			name = "Icon Scale",
-			desc = "The scale of the icons.",
+			desc = "Change the size of the icons.",
 			min = 0.25, max = 2, step = 0.01,
 			arg = "icon_scale",
-			order = 20,
+			order = 3,
 		},
 		icon_alpha = {
 			type = "range",
 			name = "Icon Alpha",
-			desc = "The alpha transparency of the icons.",
+			desc = "Change the transparency of the icons.",
 			min = 0, max = 1, step = 0.01,
 			arg = "icon_alpha",
-			order = 30,
+			order = 4,
 		},
 	},
 }
