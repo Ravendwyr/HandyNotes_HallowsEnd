@@ -1,0 +1,13 @@
+﻿## Interface: 50001
+## Title: HandyNotes_HallowsEnd
+## Notes: Displays the locations of Hallow's End candy buckets.
+## Author: Ethan Centaurai
+## Version: @project-version@
+## X-Category: Map & Minimap
+## SavedVariables: HandyNotes_HallowsEndDB
+## RequiredDeps: HandyNotes
+
+Core.lua
+
+Alliance.lua
+Horde.lua
