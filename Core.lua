@@ -159,7 +159,7 @@ local options = {
 			name = "Show completed",
 			desc = "Show icons for candy buckets you have already visited.",
 			type = "toggle",
-			width = "double",
+			width = "full",
 			arg = "completed",
 			order = 2,
 		},
