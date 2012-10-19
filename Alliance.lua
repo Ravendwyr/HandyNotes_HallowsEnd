@@ -127,10 +127,6 @@ points["Dustwallow"] = {
 	[41907410] = 12398, -- Mudsprocket
 }
 
-points["Exodar"] = {
-	[59301920] = 12337, -- Seat of the Naaru
-}
-
 points["Felwood"] = {
 	[44602890] = 28994, -- Whisperwind Grove
 	[61802670] = 28995, -- Talonbranch Glade
@@ -161,6 +157,10 @@ points["StonetalonMountains"] = {
 points["Tanaris"] = {
 	[52602710] = 12399, -- Gadgetzan
 	[55706090] = 29014, -- Bootlegger Outpost
+}
+
+points["TheExodar"] = {
+	[59251847] = 12337, -- Seat of the Naaru
 }
 
 points["Teldrassil"] = {
