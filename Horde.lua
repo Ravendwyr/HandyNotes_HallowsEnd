@@ -1,8 +1,5 @@
 ﻿
-local select = select
-local UnitFactionGroup = UnitFactionGroup
-
-if select(2, UnitFactionGroup("player")) ~= "Horde" then return end
+if UnitFactionGroup("player") ~= "Horde" then return end
 
 
 local _, HallowsEnd = ...
