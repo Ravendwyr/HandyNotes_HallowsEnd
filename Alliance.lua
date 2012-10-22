@@ -7,7 +7,7 @@ local points = HallowsEnd.points -- points[<mapfile>] = { [<coordinates>] = <que
 
 -- Eastern Kingdoms
 points["Arathi"] = {
---	[00000000] = 28954,	-- Refuge Pointe
+	[40104910] = 28954, -- Refuge Pointe
 }
 
 points["Badlands"] = {
