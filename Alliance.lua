@@ -335,7 +335,7 @@ points["TownlongWastes"] = {
 }
 
 points["ValeofEternalBlossoms"] = {
-	[35007800] = 32044, -- Mistfall Village
+	[35157775] = 32044, -- Mistfall Village
 	[87006400] = 32052, -- Shrine of Seven Stars
 }
 

@@ -331,8 +331,8 @@ points["TownlongWastes"] = {
 }
 
 points["ValeofEternalBlossoms"] = {
-	[35007800] = 32044, -- Mistfall Village
-	[60006000] = 32022, -- Shrine of Two Moons
+	[35157775] = 32044, -- Mistfall Village
+	[61981626] = 32022, -- Shrine of Two Moons
 }
 
 points["ValleyoftheFourWinds"] = {
