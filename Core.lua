@@ -194,7 +194,6 @@ function HallowsEnd:OnEnable()
 		db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults).profile
 	else
 		self:Disable()
-		DisableAddOn("HandyNotes_HallowsEnd")
 	end
 end
 
