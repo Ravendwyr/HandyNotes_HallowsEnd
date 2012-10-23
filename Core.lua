@@ -191,7 +191,7 @@ function HallowsEnd:OnEnable()
 		HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
 		self:RegisterEvent("QUEST_FINISHED", "Refresh")
 
-		db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults).profile
+		db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults, "Default").profile
 	else
 		self:Disable()
 	end
