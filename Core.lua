@@ -9,20 +9,26 @@
 
 -- declaration
 local ID, HallowsEnd = ...
-
 HallowsEnd.points = {}
 
--- our db upvalue and db defaults
+
+-- our db and defaults
 local db
 local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha = 0.8 } }
 
 
--- localize some globals
-local next = next
-local HandyNotes = HandyNotes
-local GameTooltip = GameTooltip
-local WorldMapTooltip = WorldMapTooltip
-local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted
+-- upvalues
+local _G = _G
+local next = _G.next
+local UIParent = _G.UIParent
+local GameTooltip = _G.GameTooltip
+local WorldMapTooltip = _G.WorldMapTooltip
+local CalendarGetDate = _G.CalendarGetDate
+local IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
+
+local TomTom = _G.TomTom
+local HandyNotes = _G.HandyNotes
+local Cartographer_Waypoints = _G.Cartographer_Waypoints
 
 
 -- plugin handler for HandyNotes
