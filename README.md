@@ -5,27 +5,32 @@
 What it does
 ------------
 
-This addon will display locations of Hallow's End candy buckets on the worldmap and minimap.  
-This addon requires [HandyNotes](http://www.curse.com/addons/wow/handynotes) to work.
+This addon displays locations of unvisited candy buckets on the worldmap and minimap while Hallow's End is active (18th - 31st October).  
+If you also have TomTom or Cartographer installed, you can right-click on a marker to create a Waypoint arrow.
+
+Requires [HandyNotes](http://www.curse.com/addons/wow/handynotes) to work.
 
 
 Configuration
 -------------
 
-By default, the markers for buckets you have already visited are hidden.  
-You can toggle this, as well as icon size and transparency, in the HandyNotes config window.
+There are a few options you can modify, including:
+
+* Icon size.
+* Icon transparency.
+* Show all icons, even if you have already visited that bucket.
 
 
 Translations
 ------------
 
-This addon should work for everyone regardless of language, but its text is currently only in English.
+This addon should work for everyone regardless of language, but most of the text is currently only in English.
 
 
 Feedback
 --------
 
-If you have any comments, bug reports or feature requests, please leave a comment here or open a ticket on either the [WoWace Ticket Center](http://www.wowace.com/addons/handynotes_hallowsend/tickets/) or the [GitHub Issues Hub](https://github.com/EthanCentaurai/HandyNotes_HallowsEnd/issues).
+If you have any comments, bug reports or feature requests, please leave a comment here or open a ticket on [WoWace](http://www.wowace.com/addons/handynotes_hallowsend/tickets/) or [GitHub](https://github.com/EthanCentaurai/HandyNotes_HallowsEnd/issues).
 
 
 * * *
@@ -34,11 +39,10 @@ If you have any comments, bug reports or feature requests, please leave a commen
 About the Author
 ----------------
 
-This addon was lovingly made by Ethan Centaurai, who currently lives in Manningree in south-east England.  
-He mostly plays as [Ulbrecht](http://eu.battle.net/wow/en/character/ghostlands/Ulbrecht/simple) on Ghostlands-EU.
+This addon was lovingly created by Ethan Centaurai, who currently lives in Manningree in south-east England.
 
-Follow me on [Twitter](http://twitter.com/StevenBlanchard).  
-Subscribe to my [blog](http://www.noblewolf.net/).  
-Star me on [GitHub](https://github.com/EthanCentaurai).
+* Visit my [blog](http://www.noblewolf.net/).
+* Follow me on [Twitter](http://twitter.com/StevenBlanchard).    
+* Star me on [GitHub](https://github.com/EthanCentaurai).
 
 Profile pic made by [Fyreuni](http://daily-quests.com/comic/).
