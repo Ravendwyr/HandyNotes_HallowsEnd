@@ -20,23 +20,23 @@ local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha =
 -- upvalues
 local _G = getfenv(0)
 
-local next = _G.next
-local pairs = _G.pairs
-local LibStub = _G.LibStub
-local UIParent = _G.UIParent
-local GameTooltip = _G.GameTooltip
-local WorldMapButton = _G.WorldMapButton
-local WorldMapTooltip = _G.WorldMapTooltip
 local CalendarGetDate = _G.CalendarGetDate
 local CloseDropDownMenus = _G.CloseDropDownMenus
-local ToggleDropDownMenu = _G.ToggleDropDownMenu
+local GameTooltip = _G.GameTooltip
 local IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
+local LibStub = _G.LibStub
+local next = _G.next
+local pairs = _G.pairs
+local ToggleDropDownMenu = _G.ToggleDropDownMenu
 local UIDropDownMenu_AddButton = _G.UIDropDownMenu_AddButton
+local UIParent = _G.UIParent
+local WorldMapButton = _G.WorldMapButton
+local WorldMapTooltip = _G.WorldMapTooltip
 
-local TomTom = _G.TomTom
-local HandyNotes = _G.HandyNotes
 local Cartographer_Waypoints = _G.Cartographer_Waypoints
+local HandyNotes = _G.HandyNotes
 local NotePoint = _G.NotePoint
+local TomTom = _G.TomTom
 
 
 -- plugin handler for HandyNotes
