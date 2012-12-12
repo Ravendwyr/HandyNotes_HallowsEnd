@@ -1,4 +1,4 @@
-﻿
+
 if UnitFactionGroup("player") ~= "Horde" then return end
 
 

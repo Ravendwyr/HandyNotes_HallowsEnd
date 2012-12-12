@@ -1,4 +1,4 @@
-﻿
+
 ------------------------------------------
 --  This addon was heavily inspired by  --
 --    HandyNotes_Lorewalkers            --
@@ -200,7 +200,7 @@ local options = {
 -- initialise
 function HallowsEnd:OnEnable()
 	local _, month, day, year = CalendarGetDate()
-	
+
 	if month == 10 and (day >= 18 and day <= 31) then
 		HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
 		self:RegisterEvent("QUEST_FINISHED", "Refresh")

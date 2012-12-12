@@ -1,4 +1,4 @@
-﻿## Interface: 50001
+## Interface: 50001
 ## Title: HandyNotes_HallowsEnd
 ## Notes: Displays the locations of Hallow's End candy buckets.
 ## Author: Ethan Centaurai
