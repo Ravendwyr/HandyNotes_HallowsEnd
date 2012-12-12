@@ -30,7 +30,7 @@ This addon should work for everyone regardless of language, but most of the text
 Feedback
 --------
 
-If you have any comments, bug reports or feature requests, please leave a comment here or open a ticket on [WoWace](http://www.wowace.com/addons/handynotes_hallowsend/tickets/) or [GitHub](https://github.com/EthanCentaurai/HandyNotes_HallowsEnd/issues).
+If you have any comments, bug reports or feature requests, please leave a comment here or open a support ticket on [WoWace](http://www.wowace.com/addons/handynotes_hallowsend/tickets/) or [GitHub](https://github.com/EthanCentaurai/HandyNotes_HallowsEnd/issues).
 
 
 * * *
@@ -39,10 +39,8 @@ If you have any comments, bug reports or feature requests, please leave a commen
 About the Author
 ----------------
 
-This addon was lovingly created by Ethan Centaurai, who currently lives in Manningree in south-east England.
+This addon was lovingly made by Ethan Centaurai, who usually plays as [Ulbrecht](http://eu.battle.net/wow/en/character/ghostlands/ulbrecht/simple) on Ghostlands-EU.
 
 * Visit my [blog](http://www.noblewolf.net/).
 * Follow me on [Twitter](http://twitter.com/StevenBlanchard).
-* Star me on [GitHub](https://github.com/EthanCentaurai).
-
-Profile pic made by [Fyreuni](http://daily-quests.com/comic/).
+* Watch me on [GitHub](https://github.com/EthanCentaurai).
