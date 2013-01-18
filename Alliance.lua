@@ -3,7 +3,9 @@ if UnitFactionGroup("player") ~= "Alliance" then return end
 
 
 local _, HallowsEnd = ...
-local points = HallowsEnd.points -- points[<mapfile>] = { [<coordinates>] = <quest ID> }
+local points = HallowsEnd.points
+-- points[<mapfile>] = { [<coordinates>] = <quest ID> }
+
 
 -- Eastern Kingdoms
 points["Arathi"] = {
