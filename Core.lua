@@ -20,7 +20,6 @@ local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha =
 -- upvalues
 local _G = getfenv(0)
 
-local CalendarGetDate = _G.CalendarGetDate
 local CloseDropDownMenus = _G.CloseDropDownMenus
 local GameTooltip = _G.GameTooltip
 local IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
@@ -205,16 +204,10 @@ local options = {
 
 -- initialise
 function HallowsEnd:OnEnable()
-	local _, month, day, year = CalendarGetDate()
+	HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
+	self:RegisterEvent("QUEST_FINISHED", "Refresh")
 
-	if month == 10 and (day >= 18 and day <= 31) then
-		HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
-		self:RegisterEvent("QUEST_FINISHED", "Refresh")
-
-		db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults, "Default").profile
-	else
-		self:Disable()
-	end
+	db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults, "Default").profile
 end
 
 function HallowsEnd:Refresh()
