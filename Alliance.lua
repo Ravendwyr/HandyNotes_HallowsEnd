@@ -35,7 +35,7 @@ points["EasternPlaguelands"] = {
 }
 
 points["Elwynn"] = {
-	[43746589] = 12286, -- Pornshire
+	[43746589] = 12286, -- Goldshire
 }
 
 points["Hinterlands"] = {
