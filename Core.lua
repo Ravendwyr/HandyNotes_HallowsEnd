@@ -38,6 +38,8 @@ local HandyNotes = _G.HandyNotes
 local NotePoint = _G.NotePoint
 local TomTom = _G.TomTom
 
+local points = HallowsEnd.points
+
 
 -- plugin handler for HandyNotes
 function HallowsEnd:OnEnter(mapFile, coord)
@@ -155,7 +157,7 @@ do
 
 	function HallowsEnd:GetNodes(mapFile)
 		mapFile = gsub(mapFile, "_terrain%d+$", "")
-		return iter, self.points[mapFile], nil
+		return iter, points[mapFile], nil
 	end
 end
 
