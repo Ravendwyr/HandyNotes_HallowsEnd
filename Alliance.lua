@@ -7,7 +7,9 @@ local points = HallowsEnd.points
 -- points[<mapfile>] = { [<coordinates>] = <quest ID> }
 
 
--- Eastern Kingdoms
+----------------------
+-- Eastern Kingdoms --
+----------------------
 points["Arathi"] = {
 	[40104910] = 28954, -- Refuge Pointe
 }
@@ -91,7 +93,10 @@ points["Wetlands"] = {
 	[58103920] = 28991, -- Greenwarden Grove
 }
 
--- Kalimdor
+
+--------------
+-- Kalimdor --
+--------------
 points["Ashenvale"] = {
 	[37004930] = 12345, -- Astranaar
 }
@@ -174,7 +179,10 @@ points["Winterspring"] = {
 	[59805120] = 12400, -- Everlook
 }
 
--- Outland
+
+-------------
+-- Outland --
+-------------
 points["BladesEdgeMountains"] = {
 	[62903830] = 12406, -- Evergrove
 	[35806380] = 12358, -- Sylvanaar
@@ -216,7 +224,10 @@ points["Zangarmarsh"] = {
 	[78506290] = 12403, -- Cenarion Refuge
 }
 
--- Northrend
+
+---------------
+-- Northrend --
+---------------
 points["BoreanTundra"] = {
 	[58506790] = 13436, -- Valliance Keep
 	[57101880] = 13437, -- Fizzcrank Airstrip
@@ -263,7 +274,10 @@ points["ZulDrak"] = {
 	[40806600] = 12941, -- The Argent Stand
 }
 
--- Cataclysm
+
+---------------
+-- Cataclysm --
+---------------
 points["Deepholm"] = {
 	[47405170] = 29020, -- Temple of Earth
 }
@@ -299,7 +313,10 @@ points["VashjirRuins"] = {
 	[49705740] = 28983, -- Tranquil Wash
 }
 
--- Pandaria
+
+--------------
+-- Pandaria --
+--------------
 points["DreadWastes"] = {
 	[55007100] = 32023, -- Soggy's Gamble
 	[56003200] = 32024, -- Klaxxi'vess
