@@ -208,10 +208,16 @@ local options = {
 
 -- initialise
 function HallowsEnd:OnEnable()
-	HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
-	self:RegisterEvent("QUEST_FINISHED", "Refresh")
+	local _, month, day = CalendarGetDate()
 
-	db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults, "Default").profile
+	if month == 10 and (day >= 18 and day <= 31) then
+		HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
+		self:RegisterEvent("QUEST_FINISHED", "Refresh")
+
+		db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults, "Default").profile
+	else
+		self:Disable()
+	end
 end
 
 function HallowsEnd:Refresh()
