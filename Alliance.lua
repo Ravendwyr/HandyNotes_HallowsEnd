@@ -317,6 +317,32 @@ points["VashjirRuins"] = {
 --------------
 -- Pandaria --
 --------------
+points["Pandaria"] = {
+	[65813969] = 32021, -- Tian Monastery, The Jade Forest
+	[35897543] = 32023, -- Soggy's Gamble, Dread Wastes
+	[36136201] = 32024, -- Klaxxi'vess, Dread Wastes
+	[57545659] = 32026, -- Tavern in the Mists, The Hidden Stair
+	[67664888] = 32027, -- Dawn's Blossom, The Jade Forest
+	[68694485] = 32029, -- Greenstone Village, The Jade Forest
+	[72144024] = 32031, -- Sri-La Village, The Jade Forest
+	[71645777] = 32032, -- Jade Temple Grounds, The Jade Forest
+	[73866671] = 32033, -- Pearlfin Village, The Jade Forest
+	[52958899] = 32034, -- Marista, Krasarang Wilds
+	[60356773] = 32036, -- Zhu's Watch, Krasarang Wilds
+	[48403444] = 32037, -- One Keg, Kun-Lai Summit
+	[54554747] = 32039, -- Binan Village, Kun-Lai Summit
+	[51133496] = 32041, -- The Grummle Bazaar, Kun-Lai Summit
+	[47034365] = 32042, -- Westwind Rest, Kun-Lai Summit
+	[37124190] = 32043, -- Longying Outpost, Townlong Steppes
+	[46165843] = 32044, -- Mistfall Village, Vale of Eternal Blossoms
+	[44186810] = 32046, -- Stoneplow, Valley of the Four Winds
+	[60315909] = 32048, -- Pang's Stead, Valley of the Four Winds
+	[67226724] = 32049, -- Paw'don Village, The Jade Forest
+	[50422192] = 32051, -- Zouchin Village, Kun-Lai Summit
+	[54635699] = 32052, -- Shrine of Seven Stars, Vale of Eternal Blossoms
+}
+
+
 points["DreadWastes"] = {
 	[55217117] = 32023, -- Soggy's Gamble
 	[55913228] = 32024, -- Klaxxi'vess
