@@ -318,47 +318,47 @@ points["VashjirRuins"] = {
 -- Pandaria --
 --------------
 points["DreadWastes"] = {
-	[55007100] = 32023, -- Soggy's Gamble
-	[56003200] = 32024, -- Klaxxi'vess
+	[55217117] = 32023, -- Soggy's Gamble
+	[55913228] = 32024, -- Klaxxi'vess
 }
 
 points["Krasarang"] = {
-	[51007700] = 32034, -- Marista
-	[76000700] = 32036, -- Zhu's Watch
+	[51437729] = 32034, -- Marista
+	[75930691] = 32036, -- Zhu's Watch
 }
 
 points["KunLaiSummit"] = {
-	[73009200] = 32039, -- Binan Village
-	[64006100] = 32041, -- The Grummle Bazaar
-	[57006000] = 32037, -- One Keg
-	[54008300] = 32042, -- Westwind Rest
-	[62002900] = 32051, -- Zouchin Village
+	[72719226] = 32039, -- Binan Village
+	[64226125] = 32041, -- The Grummle Bazaar
+	[57475994] = 32037, -- One Keg
+	[54078278] = 32042, -- Westwind Rest
+	[62482892] = 32051, -- Zouchin Village
 }
 
 points["TheHiddenPass"] = {
-	[55007200] = 32026, -- Tavern in the Mists
+	[55037224] = 32026, -- Tavern in the Mists
 }
 
 points["TheJadeForest"] = {
-	[46004400] = 32027, -- Dawn's Blossom
-	[48003500] = 32029, -- Greenstone Village
-	[55006300] = 32032, -- Jade Temple Grounds
-	[45008400] = 32049, -- Paw'don Village
-	[60008300] = 32033, -- Pearlfin Village
-	[56002400] = 32031, -- Sri-La Village
-	[42002300] = 32021, -- Tian Monastery
+	[45784360] = 32027, -- Dawn's Blossom
+	[48083464] = 32029, -- Greenstone Village
+	[54626335] = 32032, -- Jade Temple Grounds
+	[44808439] = 32049, -- Paw'don Village
+	[59558322] = 32033, -- Pearlfin Village
+	[55732440] = 32031, -- Sri-La Village
+	[41672316] = 32021, -- Tian Monastery
 }
 
 points["TownlongWastes"] = {
-	[71005800] = 32043, -- Longying Outpost
+	[71135780] = 32043, -- Longying Outpost
 }
 
 points["ValeofEternalBlossoms"] = {
-	[35157775] = 32044, -- Mistfall Village
-	[87006400] = 32052, -- Shrine of Seven Stars
+	[35137777] = 32044, -- Mistfall Village
+	[87006895] = 32052, -- Shrine of Seven Stars
 }
 
 points["ValleyoftheFourWinds"] = {
-	[84002000] = 32048, -- Pang's Stead
-	[20005600] = 32046, -- Stoneplow
+	[83642019] = 32048, -- Pang's Stead
+	[19885582] = 32046, -- Stoneplow
 }
