@@ -11,86 +11,93 @@ local points = HallowsEnd.points
 -- Eastern Kingdoms --
 ----------------------
 points["Arathi"] = {
-	[40104910] = 28954, -- Refuge Pointe
+	[40094914] = 28954, -- Refuge Pointe
 }
 
 points["Badlands"] = {
-	[65903580] = 28955, -- Fuselight
-	[20905630] = 28956, -- Dragon's Mouth
+	[65863565] = 28955, -- Fuselight
+	[20875632] = 28956, -- Dragon's Mouth
 }
 
 points["BlastedLands"] = {
-	[60691408] = 28960, -- Nethergarde Keep
-	[44338759] = 28961, -- Surwich
+	[60691407] = 28960, -- Nethergarde Keep
+	[44348759] = 28961, -- Surwich
 }
 
 points["DunMorogh"] = {
-	[54505070] = 12332, -- Kharanos
+	[54485076] = 12332, -- Kharanos
+	[61202744] = 12335, -- The Commons, Ironforge
 }
 
 points["Duskwood"] = {
-	[73804430] = 12344, -- Darkshire
+	[73804425] = 12344, -- Darkshire
 }
 
 points["EasternPlaguelands"] = {
-	[75605240] = 12402, -- Light's Hope Chapel
+	[75575230] = 12402, -- Light's Hope Chapel
 }
 
 points["Elwynn"] = {
-	[43746589] = 12286, -- Goldshire
+	[43746590] = 12286, -- Goldshire
+	[24894013] = 12336, -- Trade District, Stormwind City
 }
 
 points["Hinterlands"] = {
-	[14204470] = 12351, -- Aerie Peak
-	[66204440] = 28970, -- Stormfeather Outpost
+	[14194460] = 12351, -- Aerie Peak
+	[66164443] = 28970, -- Stormfeather Outpost
 }
 
 points["Ironforge"] = {
-	[18705130] = 12335, -- The Commons
+	[18505083] = 12335, -- The Commons
 }
 
 points["LochModan"] = {
-	[35504840] = 12339, -- Thelsamar
-	[82906360] = 28963, -- Farstrider Lodge
+	[35544850] = 12339, -- Thelsamar
+	[83036353] = 28963, -- Farstrider Lodge
 }
 
 points["Redridge"] = {
-	[26464150] = 12342, -- Lakeshire
+	[26484156] = 12342, -- Lakeshire
 }
 
 points["SearingGorge"] = {
-	[39486602] = 28965, -- Iron Summit
+	[39486603] = 28965, -- Iron Summit
 }
 
 points["StormwindCity"] = {
-	[60527533] = 12336, -- Trade District
+	[60517532] = 12336, -- Trade District
 }
 
 points["StranglethornJungle"] = {
-	[53166699] = 28964, -- Fort Livingston
+	[53166698] = 28964, -- Fort Livingston
+}
+
+points["StranglethornVale"] = {
+	[37907993] = 12397, -- Booty Bay, Southern Stranglethorn
+	[52094310] = 28964, -- Fort Livingston, Northern Stranglethorn
 }
 
 points["SwampOfSorrows"] = {
-	[71641408] = 28967, -- Bogpaddle
-	[28933241] = 28968, -- The Harbourage
+	[71651410] = 28967, -- Bogpaddle
+	[28933240] = 28968, -- The Harbourage
 }
 
 points["TheCapeOfStranglethorn"] = {
-	[40927374] = 12397, -- Booty Bay
+	[40917372] = 12397, -- Booty Bay
 }
 
 points["WesternPlaguelands"] = {
-	[43408450] = 28988, -- Chillwind Camp
+	[43418439] = 28988, -- Chillwind Camp
 }
 
 points["Westfall"] = {
-	[56814732] = 12340, -- Sentinel Hill
+	[56824732] = 12340, -- Sentinel Hill
 }
 
 points["Wetlands"] = {
-	[10806090] = 12343, -- Menethil Harbour
-	[26102590] = 28990, -- Swiftgear Station
-	[58103920] = 28991, -- Greenwarden Grove
+	[10816095] = 12343, -- Menethil Harbour
+	[26092597] = 28990, -- Swiftgear Station
+	[58183921] = 28991, -- Greenwarden's Grove
 }
 
 
@@ -289,10 +296,11 @@ points["Hyjal"] = {
 }
 
 points["TwilightHighlands"] = {
-	[60405820] = 28977, -- Firebeard's Patrol
-	[79507850] = 28980, -- Highbank
-	[49603040] = 28978, -- Thundermar
-	[43605730] = 28979, -- Victor's Point
+	[60355825] = 28977, -- Firebeard's Patrol
+	[78877780] = 28980, -- Highbank (north-west)
+	[79487855] = 28980, -- Highbank (south-east)
+	[49583036] = 28978, -- Thundermar
+	[43505727] = 28979, -- Victor's Point
 }
 
 points["Uldum"] = {
@@ -300,17 +308,24 @@ points["Uldum"] = {
 	[54703300] = 29017, -- Ramkahen
 }
 
+points["Vashjir"] = {
+	[78653071] = 28981, -- Deepmist Grotto, Kelp'thar Forest
+	[64195159] = 28982, -- Silver Tide Hollow, Shimmering Expanse
+	[64566242] = 28983, -- Tranquil Wash, Shimmering Expanse
+	[39576790] = 28985, -- Darkbreak Cove, Abyssal Depths
+}
+
 points["VashjirDepths"] = {
-	[54707220] = 28985, -- Darkbreak Cove
+	[54677212] = 28985, -- Darkbreak Cove
 }
 
 points["VashjirKelpForest"] = {
-	[63406020] = 28981, -- Deepmist Grotto
+	[63506017] = 28981, -- Deepmist Grotto
 }
 
 points["VashjirRuins"] = {
-	[49204190] = 28982, -- Silver Tide Hollow
-	[49705740] = 28983, -- Tranquil Wash
+	[49174188] = 28982, -- Silver Tide Hollow
+	[49725739] = 28983, -- Tranquil Wash
 }
 
 
