@@ -10,6 +10,46 @@ local points = HallowsEnd.points
 ----------------------
 -- Eastern Kingdoms --
 ----------------------
+points["Azeroth"] = {
+	[46715898] = 12335, -- The Commons, Ironforge
+	[42967383] = 12336, -- Trade District, Stormwind City
+
+	[44567603] = 12286, -- Goldshire, Elwynn Forest
+	[45916179] = 12332, -- Kharanos, Dun Morogh
+	[51906098] = 12339, -- Thelsamar, Loch Modan
+	[42087986] = 12340, -- Sentinel Hill, Westfall
+	[49907515] = 12342, -- Lakeshire, Redridge Mountains
+	[46665526] = 12343, -- Menethil Harbour, Wetlands
+	[47457989] = 12344, -- Darkshire, Duskwood
+	[49813998] = 12351, -- Aerie Peak, The Hinterlands
+	[43399441] = 12397, -- Booty Bay, Southern Stranglethorn
+	[57703270] = 12402, -- Light's Hope Chapel, Eastern Plaguelands
+	[50794588] = 28954, -- Refuge Pointe, Arathi Highlands
+	[54246541] = 28955, -- Fuselight, Badlands
+	[50846697] = 28956, -- Dragon's Mouth, Badlands
+	[52998141] = 28960, -- Nethergarde Keep, Blasted Lands
+	[51528802] = 28961, -- Surwich, Blasted Lands
+	[55126200] = 28963, -- Farstrider Lodge, Loch Modan
+	[45678849] = 28964, -- Fort Livingston, Northern Stranglethorn
+	[47566725] = 28965, -- Iron Summit, Searing Gorge
+	[54127716] = 28967, -- Bogpaddle, Swamp of Sorrows
+	[51497828] = 28968, -- The Harbourage, Swamp of Sorrows
+	[54723996] = 28970, -- Stormfeather Outpost, The Hinterlands
+	[48163768] = 28988, -- Chillwind Camp, Western Plaguelands
+	[48215171] = 28990, -- Swiftgear Station, Wetlands
+	[51475306] = 28991, -- Greenwarden's Grove, Wetlands
+
+	[58395665] = 28977, -- Firebeard's Patrol, Twilight Highlands
+	[57005304] = 28978, -- Thundermar, Twilight Highlands
+	[56215652] = 28979, -- Victor's Point, Twilight Highlands
+	[60795918] = 28980, -- Highbank, Twilight Highlands
+	[36526011] = 28981, -- Deepmist Grotto, Kelp'thar Forest
+	[34066367] = 28982, -- Silver Tide Hollow, Shimmering Expanse
+	[34126552] = 28983, -- Tranquil Wash, Shimmering Expanse
+	[29866645] = 28985, -- Darkbreak Cove, Abyssal Depths
+}
+
+
 points["Arathi"] = {
 	[40094914] = 28954, -- Refuge Pointe
 }
