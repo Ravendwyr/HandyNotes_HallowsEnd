@@ -149,7 +149,7 @@ points["Ashenvale"] = {
 }
 
 points["AzuremystIsle"] = {
-	[48494205] = 12333, -- Azure Watch
+	[48494905] = 12333, -- Azure Watch
 }
 
 points["Barrens"] = {
