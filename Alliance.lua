@@ -144,6 +144,45 @@ points["Wetlands"] = {
 --------------
 -- Kalimdor --
 --------------
+points["Kalimdor"] = {
+	[43711223] = 12331, -- Dolanaar, Teldrassil
+	[30322611] = 12337, -- Seat of the Naaru, The Exodar
+
+	[32452768] = 12333, -- Azure Watch, Azuremyst Isle
+	[40321091] = 12334, -- Craftsman's Terrace, Darnassus
+	[30871928] = 12341, -- Blood Watch, Bloodmyst Isle
+	[47564084] = 12345, -- Astranaar, Ashenvale
+	[42985114] = 12348, -- Nijel's Point, Desolace
+	[58536692] = 12349, -- Theramore Isle, Dustwallow Marsh
+	[40347036] = 12350, -- Feathermoon Stronghold, Feralas
+	[56345645] = 12396, -- Ratchet, Northern Barrens
+	[55007103] = 12398, -- Mudsprocket, Dustwallow Marsh
+	[56858101] = 12399, -- Gadgetzan, Tanaris
+	[59072489] = 12400, -- Everlook, Winterspring
+	[44398017] = 12401, -- Cenarion Hold, Silithus
+	[47102198] = 28951, -- Lor'danel, Darkshore
+	[41246519] = 28952, -- Dreamer's Rest, Feralas
+	[41805646] = 28993, -- Karnum's Glade, Desolace
+	[48842745] = 28994, -- Whisperwind Grove, Felwood
+	[51682707] = 28995, -- Talonbranch Glade, Felwood
+	[50555355] = 29006, -- Honour's Stand, Southern Barrens
+	[55916072] = 29007, -- Northwatch Hold, Southern Barrens
+	[52576514] = 29008, -- Fort Triumph, Southern Barrens
+	[47165098] = 29010, -- Northwatch Expedition Base Camp, Stonetalon Mountains
+	[45244733] = 29011, -- Windshear Hold, Stonetalon Mountains
+	[42104356] = 29012, -- Thal'darah Overlook, Stonetalon Mountains
+	[40834802] = 29013, -- Farwatcher's Glen, Stonetalon Mountains
+	[57468764] = 29014, -- Bootlegger Outpost, Tanaris
+	[50488274] = 29018, -- Marshal's Stand, Un'Goro Crater
+
+	[56182971] = 28999, -- Nordrassil, Mount Hyjal
+	[51053123] = 29000, -- Grove of Aessina, Mount Hyjal
+	[53833219] = 29001, -- Shrine of Aviana, Mount Hyjal
+	[44228612] = 29016, -- Oasis of Vir'sar, Uldum
+	[48959046] = 29017, -- Ramkahen, Uldum
+}
+
+
 points["Ashenvale"] = {
 	[37014926] = 12345, -- Astranaar
 }
