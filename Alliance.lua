@@ -328,13 +328,13 @@ points["ZulDrak"] = {
 -- Cataclysm --
 ---------------
 points["Deepholm"] = {
-	[47405170] = 29020, -- Temple of Earth
+	[47365171] = 29020, -- Temple of Earth
 }
 
 points["Hyjal"] = {
-	[63002410] = 28999, -- Nordrassil
-	[18703730] = 29000, -- Grove of Aessina
-	[42704560] = 29001, -- Shrine of Aviana
+	[63052415] = 28999, -- Nordrassil
+	[18623732] = 29000, -- Grove of Aessina
+	[42684571] = 29001, -- Shrine of Aviana
 }
 
 points["TwilightHighlands"] = {
@@ -346,8 +346,8 @@ points["TwilightHighlands"] = {
 }
 
 points["Uldum"] = {
-	[26600730] = 29016, -- Oasis of Vir'sar
-	[54703300] = 29017, -- Ramkahen
+	[26580724] = 29016, -- Oasis of Vir'sar
+	[54683301] = 29017, -- Ramkahen
 }
 
 points["Vashjir"] = {
