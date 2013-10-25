@@ -145,69 +145,70 @@ points["Wetlands"] = {
 -- Kalimdor --
 --------------
 points["Ashenvale"] = {
-	[37004930] = 12345, -- Astranaar
+	[37014926] = 12345, -- Astranaar
 }
 
 points["AzuremystIsle"] = {
 	[48494905] = 12333, -- Azure Watch
+	[29293485] = 12337, -- Seat of the Naaru, The Exodar
 }
 
 points["Barrens"] = {
-	[67307470] = 12396, -- Ratchet
+	[67347466] = 12396, -- Ratchet
 }
 
 points["BloodmystIsle"] = {
-	[55705990] = 12341, -- Blood Watch
+	[55695997] = 12341, -- Blood Watch
 }
 
 points["Darkshore"] = {
-	[50801880] = 28951, -- Lor'danel
+	[50801890] = 28951, -- Lor'danel
 }
 
 points["Darnassus"] = {
-	[62203300] = 12334, -- Craftsman's Terrace
+	[62273316] = 12334, -- Craftsman's Terrace
 }
 
 points["Desolace"] = {
-	[66300670] = 12348, -- Nijel's Point
-	[56805000] = 28993, -- Karnum's Glade
+	[66330659] = 12348, -- Nijel's Point
+	[56725012] = 28993, -- Karnum's Glade
 }
 
 points["Dustwallow"] = {
-	[66604530] = 12349, -- Theramore Isle
-	[41907410] = 12398, -- Mudsprocket
+	[66604528] = 12349, -- Theramore Isle
+	[41867409] = 12398, -- Mudsprocket
 }
 
 points["Felwood"] = {
-	[44602890] = 28994, -- Whisperwind Grove
-	[61802670] = 28995, -- Talonbranch Glade
+	[44582898] = 28994, -- Whisperwind Grove
+	[61862671] = 28995, -- Talonbranch Glade
 }
 
 points["Feralas"] = {
-	[46304520] = 12350, -- Feathermoon Stronghold
-	[51101780] = 28952, -- Dreamer's Rest
+	[46334519] = 12350, -- Feathermoon Stronghold
+	[51071782] = 28952, -- Dreamer's Rest
 }
 
 points["Silithus"] = {
-	[55503670] = 12401, -- Cenarion Hold
+	[55473679] = 12401, -- Cenarion Hold
 }
 
 points["SouthernBarrens"] = {
-	[39001100] = 29006, -- Honour's Stand
-	[65604660] = 29007, -- Northwatch Hold
-	[49106850] = 29008, -- Fort Triumph
+	[39011098] = 29006, -- Honour's Stand
+	[65604654] = 29007, -- Northwatch Hold
+	[49056850] = 29008, -- Fort Triumph
 }
 
 points["StonetalonMountains"] = {
 	[71027908] = 29010, -- Northwatch Expedition Base Camp
-	[59105630] = 29011, -- Windshear Hold
-	[39503280] = 29012, -- Thal'darah Overlook
-	[31506070] = 29013, -- Farwatcher's Glen
+	[59055633] = 29011, -- Windshear Hold
+	[39483281] = 29012, -- Thal'darah Overlook
+	[31536066] = 29013, -- Farwatcher's Glen
 }
 
 points["Tanaris"] = {
-	[52602710] = 12399, -- Gadgetzan
-	[55706090] = 29014, -- Bootlegger Outpost
+	[52562710] = 12399, -- Gadgetzan
+	[55706096] = 29014, -- Bootlegger Outpost
 }
 
 points["TheExodar"] = {
@@ -215,15 +216,16 @@ points["TheExodar"] = {
 }
 
 points["Teldrassil"] = {
-	[55405230] = 12331, -- Dolanaar
+	[55365229] = 12331, -- Dolanaar
+	[34164401] = 12334, -- Craftsman's Terrace, Darnassus
 }
 
 points["UngoroCrater"] = {
-	[55206210] = 29018, -- Marshal's Stand
+	[55276212] = 29018, -- Marshal's Stand
 }
 
 points["Winterspring"] = {
-	[59805120] = 12400, -- Everlook
+	[59835122] = 12400, -- Everlook
 }
 
 
