@@ -17,7 +17,6 @@ points["Azeroth"] = {
 	[44567603] = 12286, -- Goldshire, Elwynn Forest
 	[45916179] = 12332, -- Kharanos, Dun Morogh
 	[51906098] = 12339, -- Thelsamar, Loch Modan
-	[42087986] = 12340, -- Sentinel Hill, Westfall
 	[49907515] = 12342, -- Lakeshire, Redridge Mountains
 	[46665526] = 12343, -- Menethil Harbour, Wetlands
 	[47457989] = 12344, -- Darkshire, Duskwood
@@ -130,9 +129,19 @@ points["WesternPlaguelands"] = {
 	[43418439] = 28988, -- Chillwind Camp
 }
 
-points["Westfall"] = {
-	[56824732] = 12340, -- Sentinel Hill
-}
+if IsQuestFlaggedCompleted(26322) then
+	-- Sentinel Hill is on fire, the bucket is in the tower
+	points["Azeroth"][42087986] = 12340
+	points["Westfall"] = {
+		[56824732] = 12340,
+	}
+else
+	-- Sentinel Hill is not on fire, the bucket is in the inn
+	points["Azeroth"][41748041] = 12340
+	points["Westfall"] = {
+		[52915374] = 12340,
+	}
+end
 
 points["Wetlands"] = {
 	[10816095] = 12343, -- Menethil Harbour
