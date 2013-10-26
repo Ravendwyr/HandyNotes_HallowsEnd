@@ -387,8 +387,7 @@ points["Hyjal"] = {
 
 points["TwilightHighlands"] = {
 	[60355825] = 28977, -- Firebeard's Patrol
-	[78877780] = 28980, -- Highbank (north-west)
-	[79487855] = 28980, -- Highbank (south-east)
+	[79487855] = 28980, -- Highbank
 	[49583036] = 28978, -- Thundermar
 	[43505727] = 28979, -- Victor's Point
 }
