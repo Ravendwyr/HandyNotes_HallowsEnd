@@ -99,11 +99,11 @@ do
 
 			if TomTom or Cartographer_Waypoints then
 				-- waypoint menu item
+				info.notCheckable = nil
 				info.disabled = nil
 				info.isTitle = nil
-				info.notCheckable = nil
-				info.text = "Create waypoint"
 				info.icon = nil
+				info.text = "Create waypoint"
 				info.func = createWaypoint
 				info.arg1 = currentZone
 				info.arg2 = currentCoord
@@ -113,10 +113,12 @@ do
 
 			-- close menu item
 			info.text = "Close"
-			info.icon = nil
 			info.func = close
 			info.arg1 = nil
 			info.arg2 = nil
+			info.icon = nil
+			info.isTitle = nil
+			info.disabled = nil
 			info.notCheckable = 1
 
 			UIDropDownMenu_AddButton(info, level)
