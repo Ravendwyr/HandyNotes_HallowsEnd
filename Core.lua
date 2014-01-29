@@ -80,7 +80,7 @@ do
 	local currentZone, currentCoord
 
 	local function close()
-		-- we call it here to avoid "for initial value must be a number" errors
+		-- we need to do this to avoid "for initial value must be a number" errors
 		CloseDropDownMenus()
 	end
 
@@ -92,7 +92,7 @@ do
 		if level == 1 then
 			-- create the title of the menu
 			info.isTitle = 1
-			info.text = "HandyNotes - Hallow's End"
+			info.text = "Candy Bucket"
 			info.notCheckable = 1
 
 			UIDropDownMenu_AddButton(info, level)
