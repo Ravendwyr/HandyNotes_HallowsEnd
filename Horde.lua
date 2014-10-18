@@ -10,81 +10,118 @@ local points = HallowsEnd.points
 ----------------------
 -- Eastern Kingdoms --
 ----------------------
+points["Azeroth"] = {
+	[44063513] = 12368, -- Trade Quarter, Undercity
+	[56791432] = 12369, -- The Royal Exchange, Silvermoon City
+	[56431477] = 12370, -- The Bazaar, Silvermoon City
+
+	[43923274] = 12363, -- Brill, Tirisfal Glade
+	[55551513] = 12364, -- Falconwing Square, Eversong Woods
+	[55011793] = 12365, -- Fairbreeze Village, Eversong Woods
+	[40923945] = 12371, -- The Selpucher, Silverpine Forest
+	[55622214] = 12373, -- Tranquillien, Ghostlands
+	[46974135] = 12376, -- Tarren Mill, Hillsbrad Foothills
+	[53264453] = 12380, -- Hammerfall, Arathi Highlands
+	[44088696] = 12382, -- Grom'gol Base Camp, Northern Stranglethorn
+	[52607979] = 12384, -- Stonard, Swamp of Sorrows
+	[55864347] = 12387, -- Revantusk Village, Hinterlands
+	[43399441] = 12397, -- Booty Bay, Southern Stranglethorn
+	[57703270] = 12402, -- Light's Hope Chapel, Eastern Plaguelands
+	[54246541] = 28955, -- Fuselight, Badlands
+	[50666595] = 28957, -- New Kargath, Badlands
+	[51178116] = 28959, -- Dreadmaul Hold, Blasted Lands
+	[47254332] = 28962, -- Eastpoint Tower, Hillsbrad Foothills
+	[47566725] = 28965, -- Iron Summit, Searing Gorge
+	[40703712] = 28966, -- Forsaken Rear Guard, Silverpine Forest
+	[54127716] = 28967, -- Bogpaddle, Swamp of Sorrows
+	[42828991] = 28969, -- Hardwrench Hideaway, Southern Stranglethorn
+	[51474123] = 28971, -- Hiri'watha Research Station, Hinterlands
+	[43673503] = 28972, -- The Bulwark, Tirisfal Glade
+	[48683549] = 28987, -- Andorhal, Western Plaguelands
+}
+
+
 points["Arathi"] = {
-	[69003340] = 12380, -- Hammerfall
+	[69023327] = 12380, -- Hammerfall
 }
 
 points["Badlands"] = {
-	[65903580] = 28955, -- Fuselight
-	[18304280] = 28957, -- New Kargath
+	[65863565] = 28955, -- Fuselight
+	[18364273] = 28957, -- New Kargath
 }
 
 points["BlastedLands"] = {
-	[40501140] = 28959, -- Dreadmaul Hold
+	[40471128] = 28959, -- Dreadmaul Hold
 }
 
 points["EasternPlaguelands"] = {
-	[75605240] = 12402, -- Light's Hope Chapel
+	[75575231] = 12402, -- Light's Hope Chapel
 }
 
 points["EversongWoods"] = {
-	[48204780] = 12364, -- Falconwing Square
-	[43707110] = 12365, -- Fairbreeze Village
+	[48204788] = 12364, -- Falconwing Square
+	[43707103] = 12365, -- Fairbreeze Village
 }
 
 points["Ghostlands"] = {
-	[48603200] = 12373, -- Tranquillien
+	[48683190] = 12373, -- Tranquillien
 }
 
 points["HillsbradFoothills"] = {
-	[57804720] = 12376, -- Tarren Mill
-	[60306380] = 28962, -- Eastpoint Tower
+	[57854727] = 12376, -- Tarren Mill
+	[60266374] = 28962, -- Eastpoint Tower
 }
 
 points["Hinterlands"] = {
-	[78208140] = 12387, -- Revantusk Village
-	[31905790] = 28971, -- Hiri'watha Research Station
+	[78198147] = 12387, -- Revantusk Village
+	[31805787] = 28971, -- Hiri'watha Research Station
 }
 
 points["SearingGorge"] = {
-	[39486602] = 28965, -- Iron Summit
+	[39486603] = 28965, -- Iron Summit
 }
 
 points["SilvermoonCity"] = {
-	[79605790] = 12369, -- The Royal Exchange
-	[67607320] = 12370, -- The Bazaar
+	[79435767] = 12369, -- The Royal Exchange
+	[67587288] = 12370, -- The Bazaar
 }
 
 points["Silverpine"] = {
-	[46404280] = 12371, -- The Selpucher
-	[44302040] = 28966, -- Forsaken Rear Guard
+	[46454291] = 12371, -- The Selpucher
+	[44292029] = 28966, -- Forsaken Rear Guard
 }
 
 points["StranglethornJungle"] = {
-	[37305170] = 12382, -- Grom'gol Base Camp
+	[37385178] = 12382, -- Grom'gol Base Camp
+}
+
+points["StranglethornVale"] = {
+	[42213359] = 12382, -- Grom'gol Base Camp, Northern Stranglethorn
+	[37907993] = 12397, -- Booty Bay, Southern Stranglethorn
+	[34365192] = 28969, -- Hardwrench Hideaway, Southern Stranglethorn
 }
 
 points["SwampOfSorrows"] = {
-	[46905670] = 12384, -- Stonard
-	[71641408] = 28967, -- Bogpaddle
+	[46875692] = 12384, -- Stonard
+	[71651410] = 28967, -- Bogpaddle
 }
 
 points["TheCapeOfStranglethorn"] = {
 	[40927374] = 12397, -- Booty Bay
-	[35102720] = 28969, -- Hardwrench Hideaway
+	[35042721] = 28969, -- Hardwrench Hideaway
 }
 
 points["Tirisfal"] = {
-	[60905150] = 12363, -- Brill
-	[83007200] = 28972, -- The Bulwark
+	[60995141] = 12363, -- Brill
+	[83057208] = 28972, -- The Bulwark
 }
 
 points["Undercity"] = {
-	[67703790] = 12368, -- Trade Quarter
+	[67763740] = 12368, -- Trade Quarter
 }
 
 points["WesternPlaguelands"] = {
-	[48206370] = 28987, -- Andorhal
+	[48286365] = 28987, -- Andorhal
 }
 
 
