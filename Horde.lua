@@ -310,42 +310,74 @@ points["VashjirRuins"] = {
 --------------
 -- Pandaria --
 --------------
+points["Pandaria"] = {
+	[45958097] = 32020, -- Dawnchaser Retreat, Krasarang Wilds
+	[65823968] = 32021, -- Tian Monastery, The Jade Forest
+	[50544839] = 32022, -- Shrine of Two Moons, Vale of Eternal Blossoms
+	[35897544] = 32023, -- Soggy's Gamble, Dread Wastes
+	[36146201] = 32024, -- Klaxxi'vess, Dread Wastes
+	[57555659] = 32026, -- Tavern in the Mists, The Veiled Stair
+	[67664889] = 32027, -- Dawn's Blossom, The Jade Forest
+	[59665058] = 32028, -- Grookin Hill, The Jade Forest
+	[68704484] = 32029, -- Greenstone Village, The Jade Forest
+	[72134025] = 32031, -- Sri-La Village, The Jade Forest
+	[71635776] = 32032, -- Jade Temple Grounds, The Jade Forest
+	[59248899] = 32034, -- Marista, Krasarang Wilds
+	[60356772] = 32036, -- Zhu's Watch, Krasarang Wilds
+	[48403444] = 32037, -- One Keg, Kun-Lai Summit
+	[54564748] = 32039, -- Binan Village, Kun-Lai Summit
+	[50544273] = 32040, -- Eastwind Rest, Kun-Lai Summit
+	[51123497] = 32041, -- The Grummle Bazaar, Kun-Lai Summit
+	[37114189] = 32043, -- Longying Outpost, Townlong Steppes
+	[46165843] = 32044, -- Mistfall Village, Vale of Eternal Blossoms
+	[44176809] = 32046, -- Stoneplow, Valley of the Four Winds
+	[55857324] = 32047, -- Thunder Cleft, Krasarang Wilds
+	[60315908] = 32048, -- Pang's Stead, Valley of the Four Winds
+	[59863523] = 32050, -- Honeydew Village, The Jade Forest
+	[50432191] = 32051, -- Zouchin Village, Kun-Lai Summit
+}
+
+
 points["DreadWastes"] = {
-	[55007100] = 32023, -- Soggy's Gamble
-	[56003200] = 32024, -- Klaxxi'vess
+	[55217120] = 32023, -- Soggy's Gamble
+	[55933227] = 32024, -- Klaxxi'vess
 }
 
 points["Krasarang"] = {
-	[51007700] = 32034, -- Marista
-	[76000700] = 32036, -- Zhu's Watch
-	[61002500] = 32047, -- Thunder Cleft
-	[28005100] = 32020, -- Dawnchaser Retreat
+	[51407729] = 32034, -- Marista
+	[75920687] = 32036, -- Zhu's Watch
+	[61032514] = 32047, -- Thunder Cleft
+	[28255074] = 32020, -- Dawnchaser Retreat
 }
 
 points["KunLaiSummit"] = {
-	[73009200] = 32039, -- Binan Village
-	[64006100] = 32041, -- The Grummle Bazaar
-	[57006000] = 32037, -- One Keg
-	[63008100] = 32040, -- Eastwind Rest
-	[62002900] = 32051, -- Zouchin Village
+	[72739228] = 32039, -- Binan Village
+	[64216127] = 32041, -- The Grummle Bazaar
+	[57455995] = 32037, -- One Keg
+	[62778050] = 32040, -- Eastwind Rest
+	[62502890] = 32051, -- Zouchin Village
+}
+
+points["ShrineofTwoMoons"] = {
+	[58917821] = 32022, -- Shrine of Two Moons, Vale of Eternal Blossoms
 }
 
 points["TheHiddenPass"] = {
-	[55007200] = 32026, -- Tavern in the Mists
+	[55117223] = 32026, -- Tavern in the Mists
 }
 
 points["TheJadeForest"] = {
-	[46004400] = 32027, -- Dawn's Blossom
-	[48003500] = 32029, -- Greenstone Village
-	[55006300] = 32032, -- Jade Temple Grounds
-	[29001000] = 32050, -- Honeydew Village
-	[28004700] = 32028, -- Grookin Hill
-	[56002400] = 32031, -- Sri-La Village
-	[42002300] = 32021, -- Tian Monastery
+	[45774360] = 32027, -- Dawn's Blossom
+	[48093462] = 32029, -- Greenstone Village
+	[54606333] = 32032, -- Jade Temple Grounds
+	[28451327] = 32050, -- Honeydew Village
+	[28014738] = 32028, -- Grookin Hill
+	[55712441] = 32031, -- Sri-La Village
+	[41682314] = 32021, -- Tian Monastery
 }
 
 points["TownlongWastes"] = {
-	[71005800] = 32043, -- Longying Outpost
+	[71115778] = 32043, -- Longying Outpost
 }
 
 points["ValeofEternalBlossoms"] = {
@@ -354,6 +386,6 @@ points["ValeofEternalBlossoms"] = {
 }
 
 points["ValleyoftheFourWinds"] = {
-	[84002000] = 32048, -- Pang's Stead
-	[20005600] = 32046, -- Stoneplow
+	[83642015] = 32048, -- Pang's Stead
+	[19875579] = 32046, -- Stoneplow
 }
