@@ -220,52 +220,80 @@ points["Zangarmarsh"] = {
 ---------------
 -- Northrend --
 ---------------
+points["Northrend"] = {
+	[71994080] = 12940, -- Zim'Torga, Zul'Drak
+	[66804329] = 12941, -- The Argent Stand, Zul'Drak
+	[64366205] = 12946, -- Conquest Hold, Grizzly Hills
+	[77515680] = 12947, -- Camp Oneqwah, Grizzly Hills
+	[19424246] = 12950, -- Nesingwary Base Camp
+	[68468356] = 13452, -- Kamagua, Howling Fjord
+	[50505930] = 13456, -- Wyrmrest Temple, Dragonblight
+	[46696600] = 13459, -- Moa'ki Harbour, Dragonblight
+	[29126409] = 13460, -- Unu'pe, Borean Tundra
+	[58003774] = 13461, -- K3, The Storm Peaks
+	[53941823] = 13462, -- Bouldercrag's Refuge, The Storm Peaks
+	[48254018] = 13463, -- The Ledgerdemain Lounge, Dalaran
+	[76646684] = 13464, -- Camp Winterhoof, Howling Fjord
+	[77548571] = 13465, -- New Agamand, Howling Fjord
+	[86804286] = 13466, -- Vengeance Landing, Howling Fjord
+	[28546030] = 13467, -- Taunka'le Village, Borean Tundra
+	[17196580] = 13468, -- Warsong Hold, Borean Tundra
+	[43445709] = 13469, -- Agmar's Hammer, Dragonblight
+	[55766240] = 13470, -- Venomspite, Dragonblight
+	[68652365] = 13471, -- Camp Tunka'lo, The Storm Peaks
+	[47984091] = 13472, -- The Underbelly, Dalaran
+	[49123964] = 13474, -- Sunreaver's Sanctuary, Dalaran
+	[19805137] = 13501, -- Bor'gorok Outpost, Borean Tundra
+	[56412318] = 13548, -- Grom'arsh Crash Site, The Storm Peaks
+}
+
+
 points["BoreanTundra"] = {
-	[78404920] = 13460, -- Unu'pe
-	[76703740] = 13467, -- Taunka'le Village
-	[41805440] = 13468, -- Warsong Hold
-	[49701000] = 13501, -- Bor'gorok Outpost
+	[78454915] = 13460, -- Unu'pe
+	[76663747] = 13467, -- Taunka'le Village
+	[41715440] = 13468, -- Warsong Hold
+	[49750998] = 13501, -- Bor'gorok Outpost
 }
 
 points["Dalaran"] = {
-	[48304080] = 13463, -- The Ledgerdemain Lounge
-	[37805990] = 13472, -- The Underbelly
-	[66603010] = 13474, -- Sunreaver's Sanctuary
+	[48134130] = 13463, -- The Ledgerdemain Lounge
+	[38245957] = 13472, -- The Underbelly
+	[66842962] = 13474, -- Sunreaver's Sanctuary
 }
 
 points["Dragonblight"] = {
-	[60105350] = 13456, -- Wyrmrest Temple
-	[48207470] = 13459, -- Moa'ki Harbour
-	[37804640] = 13469, -- Agmar's Hammer
-	[76806320] = 13470, -- Venomspite
+	[60155345] = 13456, -- Wyrmrest Temple
+	[48117466] = 13459, -- Moa'ki Harbour
+	[37834648] = 13469, -- Agmar's Hammer
+	[76826328] = 13470, -- Venomspite
 }
 
 points["GrizzlyHills"] = {
-	[20906470] = 12946, -- Conquest Hold
-	[65404700] = 12947, -- Camp Oneqwah
+	[20896477] = 12946, -- Conquest Hold
+	[65354700] = 12947, -- Camp Oneqwah
 }
 
 points["HowlingFjord"] = {
-	[25405980] = 13452, -- Kamagua
-	[49501090] = 13464, -- Camp Winterhoof
-	[52106620] = 13465, -- New Agamand
-	[79203050] = 13466, -- Vengeance Landing
+	[25445982] = 13452, -- Kamagua
+	[49441075] = 13464, -- Camp Winterhoof
+	[52106614] = 13465, -- New Agamand
+	[79273063] = 13466, -- Vengeance Landing
 }
 
 points["SholazarBasin"] = {
-	[26705920] = 12950, -- Nesingwary Base Camp
+	[26615920] = 12950, -- Nesingwary Base Camp
 }
 
 points["TheStormPeaks"] = {
-	[41108590] = 13461, -- K3
-	[30903720] = 13462, -- Bouldercrag's Refuge
-	[67605060] = 13471, -- Camp Tunka'lo
-	[37104960] = 13548, -- Grom'arsh Crash Site
+	[41078585] = 13461, -- K3
+	[30923716] = 13462, -- Bouldercrag's Refuge
+	[67655069] = 13471, -- Camp Tunka'lo
+	[37094951] = 13548, -- Grom'arsh Crash Site
 }
 
 points["ZulDrak"] = {
-	[59305720] = 12940, -- Zim'Torga
-	[40806600] = 12941, -- The Argent Stand
+	[59335720] = 12940, -- Zim'Torga
+	[40866604] = 12941, -- The Argent Stand
 }
 
 
