@@ -10,37 +10,6 @@ local points = HallowsEnd.points
 ----------------------
 -- Eastern Kingdoms --
 ----------------------
-points["Azeroth"] = {
-	[44063513] = 12368, -- Trade Quarter, Undercity
-	[56791432] = 12369, -- The Royal Exchange, Silvermoon City
-	[56431477] = 12370, -- The Bazaar, Silvermoon City
-
-	[43923274] = 12363, -- Brill, Tirisfal Glade
-	[55551513] = 12364, -- Falconwing Square, Eversong Woods
-	[55011793] = 12365, -- Fairbreeze Village, Eversong Woods
-	[40923945] = 12371, -- The Selpucher, Silverpine Forest
-	[55622214] = 12373, -- Tranquillien, Ghostlands
-	[46974135] = 12376, -- Tarren Mill, Hillsbrad Foothills
-	[53264453] = 12380, -- Hammerfall, Arathi Highlands
-	[44088696] = 12382, -- Grom'gol Base Camp, Northern Stranglethorn
-	[52607979] = 12384, -- Stonard, Swamp of Sorrows
-	[55864347] = 12387, -- Revantusk Village, Hinterlands
-	[43399441] = 12397, -- Booty Bay, Southern Stranglethorn
-	[57703270] = 12402, -- Light's Hope Chapel, Eastern Plaguelands
-	[54246541] = 28955, -- Fuselight, Badlands
-	[50666595] = 28957, -- New Kargath, Badlands
-	[51178116] = 28959, -- Dreadmaul Hold, Blasted Lands
-	[47254332] = 28962, -- Eastpoint Tower, Hillsbrad Foothills
-	[47566725] = 28965, -- Iron Summit, Searing Gorge
-	[40703712] = 28966, -- Forsaken Rear Guard, Silverpine Forest
-	[54127716] = 28967, -- Bogpaddle, Swamp of Sorrows
-	[42828991] = 28969, -- Hardwrench Hideaway, Southern Stranglethorn
-	[51474123] = 28971, -- Hiri'watha Research Station, Hinterlands
-	[43673503] = 28972, -- The Bulwark, Tirisfal Glade
-	[48683549] = 28987, -- Andorhal, Western Plaguelands
-}
-
-
 points["Arathi"] = {
 	[69023327] = 12380, -- Hammerfall
 }
@@ -257,34 +226,6 @@ points["Zangarmarsh"] = {
 ---------------
 -- Northrend --
 ---------------
-points["Northrend"] = {
-	[71994080] = 12940, -- Zim'Torga, Zul'Drak
-	[66804329] = 12941, -- The Argent Stand, Zul'Drak
-	[64366205] = 12946, -- Conquest Hold, Grizzly Hills
-	[77515680] = 12947, -- Camp Oneqwah, Grizzly Hills
-	[19424246] = 12950, -- Nesingwary Base Camp
-	[68468356] = 13452, -- Kamagua, Howling Fjord
-	[50505930] = 13456, -- Wyrmrest Temple, Dragonblight
-	[46696600] = 13459, -- Moa'ki Harbour, Dragonblight
-	[29126409] = 13460, -- Unu'pe, Borean Tundra
-	[58003774] = 13461, -- K3, The Storm Peaks
-	[53941823] = 13462, -- Bouldercrag's Refuge, The Storm Peaks
-	[48254018] = 13463, -- The Ledgerdemain Lounge, Dalaran
-	[76646684] = 13464, -- Camp Winterhoof, Howling Fjord
-	[77548571] = 13465, -- New Agamand, Howling Fjord
-	[86804286] = 13466, -- Vengeance Landing, Howling Fjord
-	[28546030] = 13467, -- Taunka'le Village, Borean Tundra
-	[17196580] = 13468, -- Warsong Hold, Borean Tundra
-	[43445709] = 13469, -- Agmar's Hammer, Dragonblight
-	[55766240] = 13470, -- Venomspite, Dragonblight
-	[68652365] = 13471, -- Camp Tunka'lo, The Storm Peaks
-	[47984091] = 13472, -- The Underbelly, Dalaran
-	[49123964] = 13474, -- Sunreaver's Sanctuary, Dalaran
-	[19805137] = 13501, -- Bor'gorok Outpost, Borean Tundra
-	[56412318] = 13548, -- Grom'arsh Crash Site, The Storm Peaks
-}
-
-
 points["BoreanTundra"] = {
 	[78454915] = 13460, -- Unu'pe
 	[76663747] = 13467, -- Taunka'le Village
@@ -375,34 +316,6 @@ points["VashjirRuins"] = {
 --------------
 -- Pandaria --
 --------------
-points["Pandaria"] = {
-	[45958097] = 32020, -- Dawnchaser Retreat, Krasarang Wilds
-	[65823968] = 32021, -- Tian Monastery, The Jade Forest
-	[50544839] = 32022, -- Shrine of Two Moons, Vale of Eternal Blossoms
-	[35897544] = 32023, -- Soggy's Gamble, Dread Wastes
-	[36146201] = 32024, -- Klaxxi'vess, Dread Wastes
-	[57555659] = 32026, -- Tavern in the Mists, The Veiled Stair
-	[67664889] = 32027, -- Dawn's Blossom, The Jade Forest
-	[59665058] = 32028, -- Grookin Hill, The Jade Forest
-	[68704484] = 32029, -- Greenstone Village, The Jade Forest
-	[72134025] = 32031, -- Sri-La Village, The Jade Forest
-	[71635776] = 32032, -- Jade Temple Grounds, The Jade Forest
-	[59248899] = 32034, -- Marista, Krasarang Wilds
-	[60356772] = 32036, -- Zhu's Watch, Krasarang Wilds
-	[48403444] = 32037, -- One Keg, Kun-Lai Summit
-	[54564748] = 32039, -- Binan Village, Kun-Lai Summit
-	[50544273] = 32040, -- Eastwind Rest, Kun-Lai Summit
-	[51123497] = 32041, -- The Grummle Bazaar, Kun-Lai Summit
-	[37114189] = 32043, -- Longying Outpost, Townlong Steppes
-	[46165843] = 32044, -- Mistfall Village, Vale of Eternal Blossoms
-	[44176809] = 32046, -- Stoneplow, Valley of the Four Winds
-	[55857324] = 32047, -- Thunder Cleft, Krasarang Wilds
-	[60315908] = 32048, -- Pang's Stead, Valley of the Four Winds
-	[59863523] = 32050, -- Honeydew Village, The Jade Forest
-	[50432191] = 32051, -- Zouchin Village, Kun-Lai Summit
-}
-
-
 points["DreadWastes"] = {
 	[55217120] = 32023, -- Soggy's Gamble
 	[55933227] = 32024, -- Klaxxi'vess

@@ -10,45 +10,6 @@ local points = HallowsEnd.points
 ----------------------
 -- Eastern Kingdoms --
 ----------------------
-points["Azeroth"] = {
-	[46715898] = 12335, -- The Commons, Ironforge
-	[42967383] = 12336, -- Trade District, Stormwind City
-
-	[44567603] = 12286, -- Goldshire, Elwynn Forest
-	[45916179] = 12332, -- Kharanos, Dun Morogh
-	[51906098] = 12339, -- Thelsamar, Loch Modan
-	[49907515] = 12342, -- Lakeshire, Redridge Mountains
-	[46665526] = 12343, -- Menethil Harbour, Wetlands
-	[47457989] = 12344, -- Darkshire, Duskwood
-	[49813998] = 12351, -- Aerie Peak, The Hinterlands
-	[43399441] = 12397, -- Booty Bay, Southern Stranglethorn
-	[57703270] = 12402, -- Light's Hope Chapel, Eastern Plaguelands
-	[50794588] = 28954, -- Refuge Pointe, Arathi Highlands
-	[54246541] = 28955, -- Fuselight, Badlands
-	[50846697] = 28956, -- Dragon's Mouth, Badlands
-	[52998141] = 28960, -- Nethergarde Keep, Blasted Lands
-	[51528802] = 28961, -- Surwich, Blasted Lands
-	[55126200] = 28963, -- Farstrider Lodge, Loch Modan
-	[45678849] = 28964, -- Fort Livingston, Northern Stranglethorn
-	[47566725] = 28965, -- Iron Summit, Searing Gorge
-	[54127716] = 28967, -- Bogpaddle, Swamp of Sorrows
-	[51497828] = 28968, -- The Harbourage, Swamp of Sorrows
-	[54723996] = 28970, -- Stormfeather Outpost, The Hinterlands
-	[48163768] = 28988, -- Chillwind Camp, Western Plaguelands
-	[48215171] = 28990, -- Swiftgear Station, Wetlands
-	[51475306] = 28991, -- Greenwarden's Grove, Wetlands
-
-	[58395665] = 28977, -- Firebeard's Patrol, Twilight Highlands
-	[57005304] = 28978, -- Thundermar, Twilight Highlands
-	[56215652] = 28979, -- Victor's Point, Twilight Highlands
-	[60795918] = 28980, -- Highbank, Twilight Highlands
-	[36526011] = 28981, -- Deepmist Grotto, Kelp'thar Forest
-	[34066367] = 28982, -- Silver Tide Hollow, Shimmering Expanse
-	[34126552] = 28983, -- Tranquil Wash, Shimmering Expanse
-	[29866645] = 28985, -- Darkbreak Cove, Abyssal Depths
-}
-
-
 points["Arathi"] = {
 	[40094914] = 28954, -- Refuge Pointe
 }
@@ -131,13 +92,11 @@ points["WesternPlaguelands"] = {
 
 if IsQuestFlaggedCompleted(26322) then
 	-- Sentinel Hill is on fire, the bucket is in the tower
-	points["Azeroth"][42087986] = 12340
 	points["Westfall"] = {
 		[56824732] = 12340,
 	}
 else
 	-- Sentinel Hill is not on fire, the bucket is in the inn
-	points["Azeroth"][41748041] = 12340
 	points["Westfall"] = {
 		[52915374] = 12340,
 	}
@@ -153,45 +112,6 @@ points["Wetlands"] = {
 --------------
 -- Kalimdor --
 --------------
-points["Kalimdor"] = {
-	[43711223] = 12331, -- Dolanaar, Teldrassil
-	[30322611] = 12337, -- Seat of the Naaru, The Exodar
-
-	[32452768] = 12333, -- Azure Watch, Azuremyst Isle
-	[40321091] = 12334, -- Craftsman's Terrace, Darnassus
-	[30871928] = 12341, -- Blood Watch, Bloodmyst Isle
-	[47564084] = 12345, -- Astranaar, Ashenvale
-	[42985114] = 12348, -- Nijel's Point, Desolace
-	[58536692] = 12349, -- Theramore Isle, Dustwallow Marsh
-	[40347036] = 12350, -- Feathermoon Stronghold, Feralas
-	[56345645] = 12396, -- Ratchet, Northern Barrens
-	[55007103] = 12398, -- Mudsprocket, Dustwallow Marsh
-	[56858101] = 12399, -- Gadgetzan, Tanaris
-	[59072489] = 12400, -- Everlook, Winterspring
-	[44398017] = 12401, -- Cenarion Hold, Silithus
-	[47102198] = 28951, -- Lor'danel, Darkshore
-	[41246519] = 28952, -- Dreamer's Rest, Feralas
-	[41805646] = 28993, -- Karnum's Glade, Desolace
-	[48842745] = 28994, -- Whisperwind Grove, Felwood
-	[51682707] = 28995, -- Talonbranch Glade, Felwood
-	[50555355] = 29006, -- Honour's Stand, Southern Barrens
-	[55916072] = 29007, -- Northwatch Hold, Southern Barrens
-	[52576514] = 29008, -- Fort Triumph, Southern Barrens
-	[47165098] = 29010, -- Northwatch Expedition Base Camp, Stonetalon Mountains
-	[45244733] = 29011, -- Windshear Hold, Stonetalon Mountains
-	[42104356] = 29012, -- Thal'darah Overlook, Stonetalon Mountains
-	[40834802] = 29013, -- Farwatcher's Glen, Stonetalon Mountains
-	[57468764] = 29014, -- Bootlegger Outpost, Tanaris
-	[50488274] = 29018, -- Marshal's Stand, Un'Goro Crater
-
-	[56182971] = 28999, -- Nordrassil, Mount Hyjal
-	[51053123] = 29000, -- Grove of Aessina, Mount Hyjal
-	[53833219] = 29001, -- Shrine of Aviana, Mount Hyjal
-	[44228612] = 29016, -- Oasis of Vir'sar, Uldum
-	[48959046] = 29017, -- Ramkahen, Uldum
-}
-
-
 points["Ashenvale"] = {
 	[37014926] = 12345, -- Astranaar
 }
@@ -421,32 +341,6 @@ points["VashjirRuins"] = {
 --------------
 -- Pandaria --
 --------------
-points["Pandaria"] = {
-	[65813969] = 32021, -- Tian Monastery, The Jade Forest
-	[35897543] = 32023, -- Soggy's Gamble, Dread Wastes
-	[36136201] = 32024, -- Klaxxi'vess, Dread Wastes
-	[57545659] = 32026, -- Tavern in the Mists, The Hidden Stair
-	[67664888] = 32027, -- Dawn's Blossom, The Jade Forest
-	[68694485] = 32029, -- Greenstone Village, The Jade Forest
-	[72144024] = 32031, -- Sri-La Village, The Jade Forest
-	[71645777] = 32032, -- Jade Temple Grounds, The Jade Forest
-	[73866671] = 32033, -- Pearlfin Village, The Jade Forest
-	[52958899] = 32034, -- Marista, Krasarang Wilds
-	[60356773] = 32036, -- Zhu's Watch, Krasarang Wilds
-	[48403444] = 32037, -- One Keg, Kun-Lai Summit
-	[54554747] = 32039, -- Binan Village, Kun-Lai Summit
-	[51133496] = 32041, -- The Grummle Bazaar, Kun-Lai Summit
-	[47034365] = 32042, -- Westwind Rest, Kun-Lai Summit
-	[37124190] = 32043, -- Longying Outpost, Townlong Steppes
-	[46165843] = 32044, -- Mistfall Village, Vale of Eternal Blossoms
-	[44186810] = 32046, -- Stoneplow, Valley of the Four Winds
-	[60315909] = 32048, -- Pang's Stead, Valley of the Four Winds
-	[67226724] = 32049, -- Paw'don Village, The Jade Forest
-	[50422192] = 32051, -- Zouchin Village, Kun-Lai Summit
-	[54635699] = 32052, -- Shrine of Seven Stars, Vale of Eternal Blossoms
-}
-
-
 points["DreadWastes"] = {
 	[55217117] = 32023, -- Soggy's Gamble
 	[55913228] = 32024, -- Klaxxi'vess
