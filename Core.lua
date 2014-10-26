@@ -64,14 +64,19 @@ function HallowsEnd:OnLeave()
 	end
 end
 
-local function createWaypoint(button, mapFile, coord)
-	local c, z = HandyNotes:GetCZ(mapFile)
+local function createWaypoint(_, mapFile, coord)
 	local x, y = HandyNotes:getXY(coord)
 
 	if TomTom then
-		TomTom:AddZWaypoint(c, z, x * 100, y * 100, "Candy Bucket")
+		local m = GetCurrentMapAreaID()
+
+		TomTom:AddMFWaypoint(m, nil, x, y, { title = "Candy Bucket" })
+--		TomTom:AddZWaypoint(c, z, x * 100, y * 100, "Candy Bucket")
 	elseif Cartographer_Waypoints then
-		Cartographer_Waypoints:AddWaypoint( NotePoint:new(HandyNotes:GetCZToZone(c, z), x, y, "Candy Bucket") )
+		local c, z = HandyNotes:GetCZ(mapFile)
+		local zone = HandyNotes:GetCZToZone(c, z)
+
+		Cartographer_Waypoints:AddWaypoint( NotePoint:new(zone, x, y, "Candy Bucket") )
 	end
 end
 
