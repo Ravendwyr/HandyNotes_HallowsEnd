@@ -147,17 +147,18 @@ end
 
 do
 	local continentMapFile = {
-        ["Kalimdor"]              = {__index = Astrolabe.ContinentList[1]},
-        ["Azeroth"]               = {__index = Astrolabe.ContinentList[2]},
-        ["Expansion01"]           = {__index = Astrolabe.ContinentList[3]},
-        ["Northrend"]             = {__index = Astrolabe.ContinentList[4]},
-        ["TheMaelstromContinent"] = {__index = Astrolabe.ContinentList[5]},
-        ["Vashjir"]               = {[0] = 613, 614, 615, 610},
-        ["Pandaria"]              = {__index = Astrolabe.ContinentList[6]},
-    }
-    for k, v in pairs(continentMapFile) do
-        setmetatable(v, v)
-    end
+		["Kalimdor"]              = {__index = Astrolabe.ContinentList[1]},
+		["Azeroth"]               = {__index = Astrolabe.ContinentList[2]},
+		["Expansion01"]           = {__index = Astrolabe.ContinentList[3]},
+		["Northrend"]             = {__index = Astrolabe.ContinentList[4]},
+		["TheMaelstromContinent"] = {__index = Astrolabe.ContinentList[5]},
+		["Vashjir"]               = {[0] = 613, 614, 615, 610},
+		["Pandaria"]              = {__index = Astrolabe.ContinentList[6]},
+	}
+
+	for k, v in pairs(continentMapFile) do
+		setmetatable(v, v)
+	end
 
 	-- custom iterator we use to iterate over every node in a given zone
 	local function iter(t, prestate)
@@ -175,48 +176,49 @@ do
 
 		return nil, nil, nil, nil
 	end
-	
+
 	local function iterCont(t, prestate)
-        if not t then return nil end
+		if not t then return nil end
 
-        local zone = t.Z
-        local mapFile = HandyNotes:GetMapIDtoMapFile(t.C[zone])
-        local data = points[mapFile]
-        local state, value
+		local zone = t.Z
+		local mapFile = HandyNotes:GetMapIDtoMapFile(t.C[zone])
+		local cleanMapFile = gsub(mapFile, "_terrain%d+$", "")
+		local data = points[cleanMapFile]
+		local state, value
 
-        while mapFile do
-            if data then -- only if there is data for this zone
-                state, value = next(data, prestate)
+		while mapFile do
+			if data then -- only if there is data for this zone
+				state, value = next(data, prestate)
 
-                while state do -- have we reached the end of this zone?
-                    if value and (db.completed or not IsQuestFlaggedCompleted(value)) then -- show on continent?
-                        return state, mapFile, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
-                    end
+				while state do -- have we reached the end of this zone?
+					if value and (db.completed or not IsQuestFlaggedCompleted(value)) then -- show on continent?
+						return state, mapFile, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
+					end
 
-                    state, value = next(data, state) -- get next data
-                end
-            end
+					state, value = next(data, state) -- get next data
+				end
+			end
 
-            -- get next zone
-            zone = zone + 1
-            t.Z = zone
-            mapFile = HandyNotes:GetMapIDtoMapFile(t.C[zone])
-            data = points[mapFile]
-            prestate = nil
-        end
-    end
+			-- get next zone
+			zone = zone + 1
+			t.Z = zone
+			mapFile = HandyNotes:GetMapIDtoMapFile(t.C[zone])
+			cleanMapFile = gsub(mapFile or "", "_terrain%d+$", "")
+			data = points[cleanMapFile]
+			prestate = nil
+		end
+	end
 
 	function HallowsEnd:GetNodes(mapFile)
-		mapFile = gsub(mapFile, "_terrain%d+$", "")
-
 		local C = continentMapFile[mapFile] -- Is this a continent?
 
 		if C then
-            local tbl = { C = C, Z = 0 }
-            return iterCont, tbl, nil
-        else
-            return iter, points[mapFile], nil
-        end
+			local tbl = { C = C, Z = 0 }
+			return iterCont, tbl, nil
+		else
+			mapFile = gsub(mapFile, "_terrain%d+$", "")
+			return iter, points[mapFile], nil
+		end
 	end
 end
 
