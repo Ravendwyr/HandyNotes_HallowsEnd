@@ -33,7 +33,6 @@ local UIParent = _G.UIParent
 local WorldMapButton = _G.WorldMapButton
 local WorldMapTooltip = _G.WorldMapTooltip
 
-local Astrolabe = DongleStub("Astrolabe-1.0")
 local Cartographer_Waypoints = _G.Cartographer_Waypoints
 local HandyNotes = _G.HandyNotes
 local NotePoint = _G.NotePoint
@@ -146,20 +145,6 @@ do
 end
 
 do
-	local continentMapFile = {
-		["Kalimdor"]              = {__index = Astrolabe.ContinentList[1]},
-		["Azeroth"]               = {__index = Astrolabe.ContinentList[2]},
-		["Expansion01"]           = {__index = Astrolabe.ContinentList[3]},
-		["Northrend"]             = {__index = Astrolabe.ContinentList[4]},
-		["TheMaelstromContinent"] = {__index = Astrolabe.ContinentList[5]},
-		["Vashjir"]               = {[0] = 613, 614, 615, 610},
-		["Pandaria"]              = {__index = Astrolabe.ContinentList[6]},
-	}
-
-	for k, v in pairs(continentMapFile) do
-		setmetatable(v, v)
-	end
-
 	-- custom iterator we use to iterate over every node in a given zone
 	local function iter(t, prestate)
 		if not t then return nil end
@@ -200,7 +185,7 @@ do
 			end
 
 			-- get next zone
-			zone = zone + 1
+			zone = next(t.C, zone)
 			t.Z = zone
 			mapFile = HandyNotes:GetMapIDtoMapFile(t.C[zone])
 			cleanMapFile = gsub(mapFile or "", "_terrain%d+$", "")
@@ -210,10 +195,10 @@ do
 	end
 
 	function HallowsEnd:GetNodes(mapFile)
-		local C = continentMapFile[mapFile] -- Is this a continent?
+		local C = HandyNotes:GetContinentZoneList(mapFile) -- Is this a continent?
 
 		if C then
-			local tbl = { C = C, Z = 0 }
+			local tbl = { C = C, Z = next(C) }
 			return iterCont, tbl, nil
 		else
 			mapFile = gsub(mapFile, "_terrain%d+$", "")
