@@ -33,9 +33,7 @@ local UIParent = _G.UIParent
 local WorldMapButton = _G.WorldMapButton
 local WorldMapTooltip = _G.WorldMapTooltip
 
-local Cartographer_Waypoints = _G.Cartographer_Waypoints
 local HandyNotes = _G.HandyNotes
-local NotePoint = _G.NotePoint
 local TomTom = _G.TomTom
 
 local points = HallowsEnd.points
@@ -65,18 +63,9 @@ end
 
 local function createWaypoint(_, mapFile, coord)
 	local x, y = HandyNotes:getXY(coord)
+	local m = HandyNotes:GetMapFiletoMapID(mapFile)
 
-	if TomTom then
-		local m = GetCurrentMapAreaID()
-
-		TomTom:AddMFWaypoint(m, nil, x, y, { title = "Candy Bucket" })
---		TomTom:AddZWaypoint(c, z, x * 100, y * 100, "Candy Bucket")
-	elseif Cartographer_Waypoints then
-		local c, z = HandyNotes:GetCZ(mapFile)
-		local zone = HandyNotes:GetCZToZone(c, z)
-
-		Cartographer_Waypoints:AddWaypoint( NotePoint:new(zone, x, y, "Candy Bucket") )
-	end
+	TomTom:AddMFWaypoint(m, nil, x, y, { title = "Candy Bucket" })
 end
 
 do
@@ -102,7 +91,7 @@ do
 
 			UIDropDownMenu_AddButton(info, level)
 
-			if TomTom or Cartographer_Waypoints then
+			if TomTom then
 				-- waypoint menu item
 				info.notCheckable = nil
 				info.disabled = nil
