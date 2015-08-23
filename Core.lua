@@ -294,7 +294,7 @@ end
 
 -- initialise
 function HallowsEnd:OnEnable()
-	self.isEnabled = true
+	self.isEnabled = false
 
 	local _, month, _, year = CalendarGetDate()
 	CalendarSetAbsMonth(month, year)
