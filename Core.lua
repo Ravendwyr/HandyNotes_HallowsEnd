@@ -145,6 +145,7 @@ end
 do
 	-- custom iterator we use to iterate over every node in a given zone
 	local function iter(t, prestate)
+		if not HallowsEnd.isEnabled then return nil end
 		if not t then return nil end
 
 		local state, value = next(t, prestate)
@@ -161,6 +162,7 @@ do
 	end
 
 	local function iterCont(t, prestate)
+		if not HallowsEnd.isEnabled then return nil end
 		if not t then return nil end
 
 		local zone = t.Z
