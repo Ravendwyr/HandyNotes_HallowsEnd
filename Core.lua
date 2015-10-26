@@ -279,6 +279,8 @@ local function CheckEventActive()
 	end
 
 	if setEnabled and not HallowsEnd.isEnabled then
+		completedQuests = GetQuestsCompleted(completedQuests)
+		
 		HallowsEnd.isEnabled = true
 		HallowsEnd:Refresh()
 		HallowsEnd:RegisterEvent("QUEST_TURNED_IN", "Refresh")
@@ -310,7 +312,6 @@ function HallowsEnd:OnEnable()
 	C_Timer_NewTicker(15, CheckEventActive)
 	HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
 
-	completedQuests = GetQuestsCompleted(completedQuests)
 	db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults, "Default").profile
 end
 
