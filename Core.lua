@@ -280,7 +280,7 @@ local function CheckEventActive()
 
 	if setEnabled and not HallowsEnd.isEnabled then
 		completedQuests = GetQuestsCompleted(completedQuests)
-		
+
 		HallowsEnd.isEnabled = true
 		HallowsEnd:Refresh()
 		HallowsEnd:RegisterEvent("QUEST_TURNED_IN", "Refresh")
@@ -299,7 +299,7 @@ end
 -- initialise
 function HallowsEnd:OnEnable()
 	self.isEnabled = false
-	
+
 	local HereBeDragons = LibStub("HereBeDragons-1.0", true)
 	if not HereBeDragons then
 		HandyNotes:Print("Your installed copy of HandyNotes is out of date and the Hallow's End plug-in will not work correctly.  Please update HandyNotes to version 1.4.0 or newer.")
