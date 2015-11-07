@@ -33,7 +33,6 @@ local gsub = _G.string.gsub
 local IsControlKeyDown = _G.IsControlKeyDown
 local LibStub = _G.LibStub
 local next = _G.next
-local tonumber = _G.tonumber
 local UIParent = _G.UIParent
 local WorldMapButton = _G.WorldMapButton
 local WorldMapTooltip = _G.WorldMapTooltip
@@ -277,7 +276,7 @@ function HallowsEnd:OnEnable()
 end
 
 function HallowsEnd:Refresh(_, questID)
-	if questID then completedQuests[tonumber(questID)] = true end
+	if questID then completedQuests[questID] = true end
 	self:SendMessage("HandyNotes_NotifyUpdate", "HallowsEnd")
 end
 
