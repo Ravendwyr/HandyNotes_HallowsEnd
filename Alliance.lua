@@ -386,3 +386,12 @@ points["ValleyoftheFourWinds"] = {
 	[83642019] = 32048, -- Pang's Stead
 	[19885582] = 32046, -- Stoneplow
 }
+
+
+------------------
+-- Broken Isles --
+------------------
+points["Dalaran70"] = {
+	[47954177] = 43055, -- The Ledgerdemain Lounge
+	[41486398] = 43056, -- Greyfang Enclave
+}

@@ -367,3 +367,12 @@ points["ValleyoftheFourWinds"] = {
 	[83642015] = 32048, -- Pang's Stead
 	[19875579] = 32046, -- Stoneplow
 }
+
+
+------------------
+-- Broken Isles --
+------------------
+points["Dalaran70"] = {
+	[47954177] = 43055, -- The Ledgerdemain Lounge
+	[67042940] = 43057, -- Windrunner's Sanctuary
+}
