@@ -391,6 +391,11 @@ points["ValleyoftheFourWinds"] = {
 ------------------
 -- Broken Isles --
 ------------------
+points["BrokenIsles"] = {
+	[45776429] = 43055, -- The Ledgerdemain Lounge
+	[45486526] = 43056, -- Greyfang Enclave
+}
+
 points["Dalaran70"] = {
 	[47954177] = 43055, -- The Ledgerdemain Lounge
 	[41486398] = 43056, -- Greyfang Enclave

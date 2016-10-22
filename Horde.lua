@@ -372,6 +372,11 @@ points["ValleyoftheFourWinds"] = {
 ------------------
 -- Broken Isles --
 ------------------
+points["BrokenIsles"] = {
+	[45776429] = 43055, -- The Ledgerdemain Lounge
+	[46606373] = 43057, -- Windrunner's Sanctuary
+}
+
 points["Dalaran70"] = {
 	[47954177] = 43055, -- The Ledgerdemain Lounge
 	[67042940] = 43057, -- Windrunner's Sanctuary
