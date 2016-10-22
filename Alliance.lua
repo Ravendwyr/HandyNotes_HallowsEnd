@@ -388,6 +388,18 @@ points["ValleyoftheFourWinds"] = {
 }
 
 
+-------------
+-- Draenor --
+-------------
+points["garrisonsmvalliance_tier3"] = {
+	[43765159] = 39657, -- Lunarfall Garrison
+}
+
+points["ShadowmoonValleyDR"] = {
+	[30181800] = 39657, -- Lunarfall Garrison
+}
+
+
 ------------------
 -- Broken Isles --
 ------------------

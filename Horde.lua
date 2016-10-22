@@ -369,6 +369,18 @@ points["ValleyoftheFourWinds"] = {
 }
 
 
+-------------
+-- Draenor --
+-------------
+points["garrisonffhorde_tier3"] = {
+	[47083791] = 39657, -- Frostwall Garrison
+}
+
+points["FrostfireRidge"] = {
+	[48276471] = 39657, -- Frostwall Garrison
+}
+
+
 ------------------
 -- Broken Isles --
 ------------------
