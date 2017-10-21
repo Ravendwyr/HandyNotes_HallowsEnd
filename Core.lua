@@ -46,6 +46,9 @@ local points = HallowsEnd.points
 
 -- plugin handler for HandyNotes
 function HallowsEnd:OnEnter(mapFile, coord)
+	mapFile = gsub(mapFile, "_terrain%d+$", "")
+
+	local point = points[mapFile] and points[mapFile][coord]
 	local tooltip = self:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
 
 	if self:GetCenter() > UIParent:GetCenter() then -- compare X coordinate
@@ -55,6 +58,11 @@ function HallowsEnd:OnEnter(mapFile, coord)
 	end
 
 	tooltip:SetText("Candy Bucket")
+
+	if point == "Zidormi" then
+		tooltip:AddLine("Talk to the Time Keeper to travel back in time if you can't find the bucket.", 1, 1, 1)
+		tooltip:AddLine(" ")
+	end
 
 	if TomTom then
 		tooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
@@ -112,7 +120,11 @@ do
 
 		while state do -- have we reached the end of this zone?
 			if value and (db.completed or not completedQuests[value]) then
-				return state, nil, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
+				if value == "Zidormi" then
+					return state, nil, "interface\\icons\\spell_holy_borrowedtime", db.icon_scale, db.icon_alpha
+				else
+					return state, nil, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
+				end
 			end
 
 			state, value = next(t, state) -- get next data
@@ -137,7 +149,11 @@ do
 
 				while state do -- have we reached the end of this zone?
 					if value and (db.completed or not completedQuests[value]) then -- show on continent?
-						return state, mapFile, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
+						if value == "Zidormi" then
+							return state, mapFile, "interface\\icons\\spell_holy_borrowedtime", db.icon_scale, db.icon_alpha
+						else
+							return state, mapFile, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
+						end
 					end
 
 					state, value = next(data, state) -- get next data

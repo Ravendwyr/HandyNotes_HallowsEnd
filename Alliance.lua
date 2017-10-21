@@ -143,6 +143,7 @@ points["Desolace"] = {
 }
 
 points["Dustwallow"] = {
+	[55804960] = "Zidormi",
 	[66604528] = 12349, -- Theramore Isle
 	[41867409] = 12398, -- Mudsprocket
 }

@@ -125,6 +125,7 @@ points["Durotar"] = {
 }
 
 points["Dustwallow"] = {
+	[55804960] = "Zidormi",
 	[36803240] = 12383, -- Brackenwall Village
 	[41907410] = 12398, -- Mudsprocket
 }
