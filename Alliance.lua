@@ -20,6 +20,7 @@ points["Badlands"] = {
 }
 
 points["BlastedLands"] = {
+	[48160728] = "Zidormi",
 	[60691407] = 28960, -- Nethergarde Keep
 	[44348759] = 28961, -- Surwich
 }

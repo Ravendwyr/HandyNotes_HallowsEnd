@@ -20,6 +20,7 @@ points["Badlands"] = {
 }
 
 points["BlastedLands"] = {
+	[48160728] = "Zidormi",
 	[40471128] = 28959, -- Dreadmaul Hold
 }
 
