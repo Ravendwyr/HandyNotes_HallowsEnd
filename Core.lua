@@ -269,6 +269,18 @@ local function CheckEventActive()
 
 		HandyNotes:Print("The Hallow's End celebrations have ended.  See you next year!")
 	end
+
+	if UnitFactionGroup("player") == "Alliance" then
+		points["Westfall"] = nil
+
+		if completedQuests[26322] then
+			-- Sentinel Hill is on fire, the bucket is in the tower
+			points["Westfall"] = { [56824732] = 12340 }
+		else
+			-- Sentinel Hill is not on fire, the bucket is in the inn
+			points["Westfall"] = { [52915374] = 12340 }
+		end
+	end
 end
 
 

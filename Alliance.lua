@@ -91,18 +91,6 @@ points["WesternPlaguelands"] = {
 	[43418439] = 28988, -- Chillwind Camp
 }
 
-if IsQuestFlaggedCompleted(26322) then
-	-- Sentinel Hill is on fire, the bucket is in the tower
-	points["Westfall"] = {
-		[56824732] = 12340,
-	}
-else
-	-- Sentinel Hill is not on fire, the bucket is in the inn
-	points["Westfall"] = {
-		[52915374] = 12340,
-	}
-end
-
 points["Wetlands"] = {
 	[10816095] = 12343, -- Menethil Harbour
 	[26092597] = 28990, -- Swiftgear Station
