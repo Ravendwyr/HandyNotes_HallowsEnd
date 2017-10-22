@@ -57,11 +57,12 @@ function HallowsEnd:OnEnter(mapFile, coord)
 		tooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 
-	tooltip:SetText("Candy Bucket")
-
 	if point == "Zidormi" then
+		tooltip:SetText("Zidormi")
 		tooltip:AddLine("Talk to the Time Keeper to travel back in time if you can't find the bucket.", 1, 1, 1)
 		tooltip:AddLine(" ")
+	else
+		tooltip:SetText("Candy Bucket")
 	end
 
 	if TomTom then
