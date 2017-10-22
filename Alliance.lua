@@ -241,10 +241,16 @@ points["BoreanTundra"] = {
 	[78404920] = 13460, -- Unu'pe
 }
 
+points["CrystalsongForest"] = {
+	[29053658] = 13463, -- The Ledgerdemain Lounge, Dalaran
+	[27294136] = 13472, -- The Underbelly, Dalaran
+	[27284323] = 13473, -- The Silver Enclave, Dalaran
+}
+
 points["Dalaran"] = {
-	[48304080] = 13463, -- The Ledgerdemain Lounge
-	[37805990] = 13472, -- The Underbelly
-	[42506360] = 13473, -- The Silver Enclave
+	[48144132] = 13463, -- The Ledgerdemain Lounge
+	[38235958] = 13472, -- The Underbelly
+	[42346308] = 13473, -- The Silver Enclave
 }
 
 points["Dragonblight"] = {
