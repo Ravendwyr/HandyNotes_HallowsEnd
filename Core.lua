@@ -86,8 +86,12 @@ local function createWaypoint(mapFile, coord)
 	local x, y = HandyNotes:getXY(coord)
 	local m = HandyNotes:GetMapFiletoMapID(mapFile)
 
-	TomTom:AddMFWaypoint(m, nil, x, y, { title = "Candy Bucket" })
-	TomTom:SetClosestWaypoint()
+	if m then
+		TomTom:AddMFWaypoint(m, nil, x, y, { title = "Candy Bucket" })
+		TomTom:SetClosestWaypoint()
+--	else
+--		print(mapFile, m, x, y)
+	end
 end
 
 local function createAllWaypoints()
