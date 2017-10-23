@@ -97,7 +97,7 @@ end
 local function createAllWaypoints()
 	for mapFile, coords in next, points do
 		for coord, questID in next, coords do
-			if coord and (db.completed or not completedQuests[questID]) then
+			if coord and questID ~= "Zidormi" and (db.completed or not completedQuests[questID]) then
 				createWaypoint(mapFile, coord)
 			end
 		end
