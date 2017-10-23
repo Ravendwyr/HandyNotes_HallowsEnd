@@ -355,6 +355,10 @@ points["KunLaiSummit"] = {
 	[62482892] = 32051, -- Zouchin Village
 }
 
+points["ShrineofSevenStars"] = {
+	[37866593] = 32052, -- Shrine of Seven Stars, Vale of Eternal Blossoms
+}
+
 points["TheHiddenPass"] = {
 	[55037224] = 32026, -- Tavern in the Mists
 }
@@ -375,7 +379,7 @@ points["TownlongWastes"] = {
 
 points["ValeofEternalBlossoms"] = {
 	[35137777] = 32044, -- Mistfall Village
-	[87006895] = 32052, -- Shrine of Seven Stars
+	[87036889] = 32052, -- Shrine of Seven Stars
 }
 
 points["ValleyoftheFourWinds"] = {
