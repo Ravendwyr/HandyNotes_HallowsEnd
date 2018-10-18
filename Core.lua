@@ -23,7 +23,11 @@ local continents = {
 	[113] = true, -- Northrend
 	[424] = true, -- Pandaria
 	[572] = true, -- Draenor
+	[619] = true, -- Broken Isles
+	[875] = true, -- Zandalar
+	[876] = true, -- Kul Tiras
 }
+
 
 -- upvalues
 local _G = getfenv(0)

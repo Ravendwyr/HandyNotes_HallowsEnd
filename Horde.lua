@@ -392,12 +392,7 @@ points[525] = {
 ------------------
 -- Broken Isles --
 ------------------
-points[619] = { -- "BrokenIsles"
-	[45776429] = 43055, -- The Ledgerdemain Lounge
-	[46606373] = 43057, -- Windrunner's Sanctuary
-}
-
-points[625] = { -- "Dalaran70"
+points[627] = { -- "Dalaran70"
 	[47954177] = 43055, -- The Ledgerdemain Lounge
 	[67042940] = 43057, -- Windrunner's Sanctuary
 }

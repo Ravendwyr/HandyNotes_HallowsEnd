@@ -403,12 +403,7 @@ points[539] = { -- "ShadowmoonValleyDR"
 ------------------
 -- Broken Isles --
 ------------------
-points[619] = { -- "BrokenIsles"
-	[45776429] = 43055, -- The Ledgerdemain Lounge
-	[45486526] = 43056, -- Greyfang Enclave
-}
-
-points[625] = { -- "Dalaran70"
+points[627] = { -- "Dalaran70"
 	[47954177] = 43055, -- The Ledgerdemain Lounge
 	[41486398] = 43056, -- Greyfang Enclave
 }
