@@ -69,7 +69,7 @@ function HallowsEnd:OnEnter(mapFile, coord)
 		tooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 
-		tooltip:SetText("Candy Bucket")
+	tooltip:SetText("Candy Bucket")
 
 	if notes[point] then
 		tooltip:AddLine(notes[point])
@@ -129,7 +129,7 @@ do
 		local coord, v = next(t, prev)
 		while coord do
 			if v and (db.completed or not completedQuests[v]) then
-					return coord, nil, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
+				return coord, nil, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
 			end
 
 			coord, v = next(t, coord)
