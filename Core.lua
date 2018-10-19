@@ -65,13 +65,7 @@ function HallowsEnd:OnEnter(mapFile, coord)
 		tooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 
-	if point == "Zidormi" then
-		tooltip:SetText("Zidormi")
-		tooltip:AddLine("Talk to the Time Keeper to travel back in time if you can't find the bucket.", 1, 1, 1)
-		tooltip:AddLine(" ")
-	else
 		tooltip:SetText("Candy Bucket")
-	end
 
 	if TomTom then
 		tooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
@@ -98,7 +92,7 @@ end
 local function createAllWaypoints()
 	for mapID, coords in next, points do
 		for coord, questID in next, coords do
-			if coord and questID ~= "Zidormi" and (db.completed or not completedQuests[questID]) then
+			if coord and (db.completed or not completedQuests[questID]) then
 				createWaypoint(mapID, coord)
 			end
 		end
@@ -126,11 +120,7 @@ do
 		local coord, v = next(t, prev)
 		while coord do
 			if v and (db.completed or not completedQuests[v]) then
-				if v == "Zidormi" then
-					return coord, nil, "interface\\icons\\spell_holy_borrowedtime", db.icon_scale, db.icon_alpha
-				else
 					return coord, nil, "interface\\icons\\achievement_halloween_candy_01", db.icon_scale, db.icon_alpha
-				end
 			end
 
 			coord, v = next(t, coord)

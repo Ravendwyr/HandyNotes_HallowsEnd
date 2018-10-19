@@ -20,7 +20,6 @@ points[15] = { -- "Badlands"
 }
 
 points[17] = { -- "BlastedLands"
-	[48160728] = "Zidormi",
 	[60691407] = 28960, -- Nethergarde Keep
 	[44348759] = 28961, -- Surwich
 }
@@ -132,7 +131,6 @@ points[66] = { -- "Desolace"
 }
 
 points[70] = { -- "Dustwallow"
-	[55804960] = "Zidormi",
 	[66604528] = 12349, -- Theramore Isle
 	[41867409] = 12398, -- Mudsprocket
 }
