@@ -28,6 +28,12 @@ local continents = {
 	[876] = true, -- Kul Tiras
 }
 
+local notes = {
+	[12349] = "Speak to Zidormi if you can't find the bucket.", -- Theramore Isle, Alliance
+	[28959] = "Speak to Zidormi if you can't find the bucket.", -- Dreadmaul Hold, Horde
+	[28960] = "Speak to Zidormi if you can't find the bucket.", -- Nethergarde Keep, Alliance
+	[39657] = "Requires a Tier 3 Garrison.", -- Frostwall/Lunarfall Garrison
+}
 
 -- upvalues
 local _G = getfenv(0)
@@ -54,8 +60,6 @@ local points = HallowsEnd.points
 
 -- plugin handler for HandyNotes
 function HallowsEnd:OnEnter(mapFile, coord)
-	mapFile = gsub(mapFile, "_terrain%d+$", "")
-
 	local point = points[mapFile] and points[mapFile][coord]
 	local tooltip = self:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
 
@@ -66,6 +70,11 @@ function HallowsEnd:OnEnter(mapFile, coord)
 	end
 
 		tooltip:SetText("Candy Bucket")
+
+	if notes[point] then
+		tooltip:AddLine(notes[point])
+		tooltip:AddLine(" ")
+	end
 
 	if TomTom then
 		tooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
