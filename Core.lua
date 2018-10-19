@@ -97,12 +97,10 @@ end
 
 local function createAllWaypoints()
 	for mapID, coords in next, points do
-		if type(mapID) == "string" then HandyNotes:Print(mapID, "needs to be changed to the new format.") else
 		for coord, questID in next, coords do
 			if coord and questID ~= "Zidormi" and (db.completed or not completedQuests[questID]) then
 				createWaypoint(mapID, coord)
 			end
-		end
 		end
 	end
 	TomTom:SetClosestWaypoint()
