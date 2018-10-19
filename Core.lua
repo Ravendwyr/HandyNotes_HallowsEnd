@@ -105,6 +105,7 @@ local function createAllWaypoints()
 		end
 		end
 	end
+	TomTom:SetClosestWaypoint()
 end
 
 function HallowsEnd:OnClick(button, down, mapFile, coord)
