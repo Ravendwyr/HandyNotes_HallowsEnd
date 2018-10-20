@@ -6,6 +6,11 @@ local _, HallowsEnd = ...
 local points = HallowsEnd.points
 -- points[<mapfile>] = { [<coordinates>] = <quest ID> }
 
+local aldorId = 932
+local scryerId = 934
+local neutralStanding = 4
+local _, _, standingWithAldor = GetFactionInfo(aldorId)
+local _, _, standingWithScryers = GetFactionInfo(scryerId) 
 
 ----------------------
 -- Eastern Kingdoms --
@@ -212,11 +217,18 @@ points[109] = { -- "Netherstorm"
 	[43403610] = 12408, -- The Stormspire
 }
 
-points[104] = { -- "ShadowmoonValley"
+points[104] = {  -- "ShadowmoonValley"
 	[37105820] = 12360, -- Wildhammer Stronghold
-	[61002820] = 12409, -- Altar of Sha'tar
-	[56305980] = 12409, -- Sanctum of the Stars
 }
+
+if standingWithAldor >= neutralStanding then
+	points[104][61002820] = 12409 -- Altar of Sha'tar
+end
+
+if standingWithScryers >= neutralStanding then
+	points[104][56305980] = 12409 -- Sanctum of the Stars
+end
+
 
 points[111] = { -- "ShattrathCity"
 	[28104900] = 12404, -- Aldor Rise
