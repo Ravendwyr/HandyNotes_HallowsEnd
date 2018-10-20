@@ -206,6 +206,9 @@ points[104] = { -- "ShadowmoonValley"
 	[30302780] = 12395, -- Shadowmoon Village
 }
 
+points[111] = { -- ShattrathCity"
+}
+
 points[108] = { -- "TerokkarForest"
 	[48804520] = 12391, -- Stonebreaker Hold
 }

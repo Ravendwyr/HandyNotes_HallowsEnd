@@ -216,6 +216,9 @@ points[104] = { -- "ShadowmoonValley"
 	[37105820] = 12360, -- Wildhammer Stronghold
 }
 
+points[111] = { -- ShattrathCity"
+}
+
 points[108] = { -- "TerokkarForest"
 	[56605320] = 12356, -- Allerian Stronghold
 }

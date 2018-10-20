@@ -260,17 +260,13 @@ function HallowsEnd:OnEnable()
 	-- hated by Aldor
 	if standingWithAldor <= 4 then
 		points[104][56305980] = 12409 -- Sanctum of the Stars
-		points[111] = {
-			[56208180] = 12404, -- Scryer's Tier
-		}
+		points[111][56208180] = 12404 -- Scryer's Tier
 	end
 
 	-- hated by Scryers
 	if standingWithScryers <= 4 then
 		points[104][61002820] = 12409 -- Altar of Sha'tar
-		points[111] = {
-			[28104900] = 12404, -- Aldor Rise
-		}
+		points[111][28104900] = 12404 -- Aldor Rise
 	end
 
 	for continentMapID in next, continents do
