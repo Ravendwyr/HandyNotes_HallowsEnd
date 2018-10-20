@@ -217,7 +217,7 @@ points[109] = { -- "Netherstorm"
 	[43403610] = 12408, -- The Stormspire
 }
 
-points[104] = {  -- "ShadowmoonValley"
+points[104] = { -- "ShadowmoonValley"
 	[37105820] = 12360, -- Wildhammer Stronghold
 	[61002820] = 12409, -- Altar of Sha'tar
 	[56305980] = 12409, -- Sanctum of the Stars
