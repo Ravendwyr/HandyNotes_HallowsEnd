@@ -90,6 +90,10 @@ points[22] = { -- "WesternPlaguelands"
 	[43418439] = 28988, -- Chillwind Camp
 }
 
+points[52] = { -- Westfall
+	[52915374] = 12340, -- Sentinel Hill
+}
+
 points[56] = { -- "Wetlands"
 	[10816095] = 12343, -- Menethil Harbour
 	[26092597] = 28990, -- Swiftgear Station

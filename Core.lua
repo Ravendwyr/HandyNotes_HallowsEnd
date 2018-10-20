@@ -29,6 +29,7 @@ local continents = {
 }
 
 local notes = {
+	[12340] = "If Sentinel Hill is on fire, the bucket will be in the tower. If not, it will be in the inn.",
 	[12349] = "Speak to Zidormi if you can't find the bucket.", -- Theramore Isle, Alliance
 	[28959] = "Speak to Zidormi if you can't find the bucket.", -- Dreadmaul Hold, Horde
 	[28960] = "Speak to Zidormi if you can't find the bucket.", -- Nethergarde Keep, Alliance
@@ -219,6 +220,11 @@ local function CheckEventActive()
 	if setEnabled and not HallowsEnd.isEnabled then
 		completedQuests = GetQuestsCompleted(completedQuests)
 
+		-- special treatment for Westfall
+		if UnitFactionGroup("player") == "Alliance" and completedQuests[26322] then
+			points[52] = { [56824732] = 12340 } -- if Sentinel Hill is on fire, the bucket is in the tower instead of the inn
+		end
+
 		HallowsEnd.isEnabled = true
 		HallowsEnd:Refresh()
 		HallowsEnd:RegisterEvent("QUEST_TURNED_IN", "Refresh")
@@ -237,15 +243,6 @@ end
 -- initialise
 function HallowsEnd:OnEnable()
 	self.isEnabled = false
-
-	-- special treatment for Westfall
-	if UnitFactionGroup("player") == "Alliance" then
-		if completedQuests[26322] then
-			points[52] = { [56824732] = 12340 } -- Sentinel Hill is on fire, the bucket is in the tower
-		else
-			points[52] = { [52915374] = 12340 } -- Sentinel Hill is not on fire, the bucket is in the inn
-		end
-	end
 
 	local HereBeDragons = LibStub("HereBeDragons-2.0", true)
 	if not HereBeDragons then
