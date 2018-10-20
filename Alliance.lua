@@ -223,17 +223,19 @@ points[104] = {  -- "ShadowmoonValley"
 
 if standingWithAldor >= neutralStanding then
 	points[104][61002820] = 12409 -- Altar of Sha'tar
+	
+	points[111] = { -- "ShattrathCity"
+		[28104900] = 12404, -- Aldor Rise
+	}
 end
 
 if standingWithScryers >= neutralStanding then
 	points[104][56305980] = 12409 -- Sanctum of the Stars
+	
+	points[111] = { -- "ShattrathCity"
+		[56208180] = 12404, -- Scryer's Tier
+	}
 end
-
-
-points[111] = { -- "ShattrathCity"
-	[28104900] = 12404, -- Aldor Rise
-	[56208180] = 12404, -- Scryer's Tier
-}
 
 points[108] = { -- "TerokkarForest"
 	[56605320] = 12356, -- Allerian Stronghold
