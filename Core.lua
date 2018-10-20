@@ -16,6 +16,8 @@ HallowsEnd.points = {}
 local db
 local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha = 0.8 } }
 
+local standingWithAldor, standingWithScryers
+
 local continents = {
 	[12]  = true, -- Kalimdor
 	[13]  = true, -- Eastern Kingdoms
@@ -42,6 +44,7 @@ local _G = getfenv(0)
 local C_Timer_NewTicker = _G.C_Timer.NewTicker
 local C_Calendar = _G.C_Calendar
 local GameTooltip = _G.GameTooltip
+local GetFactionInfoByID = _G.GetFactionInfoByID
 local GetGameTime = _G.GetGameTime
 local GetQuestsCompleted = _G.GetQuestsCompleted
 local gsub = _G.string.gsub
@@ -248,6 +251,26 @@ function HallowsEnd:OnEnable()
 	if not HereBeDragons then
 		HandyNotes:Print("Your installed copy of HandyNotes is out of date and the Hallow's End plug-in will not work correctly.  Please update HandyNotes to version 1.5.0 or newer.")
 		return
+	end
+
+	-- special treatment for Aldor/Scryers
+	_, _, standingWithAldor = GetFactionInfoByID(932)
+	_, _, standingWithScryers = GetFactionInfoByID(934)
+
+	-- hated by Aldor
+	if standingWithAldor <= 4 then
+		points[104][56305980] = 12409 -- Sanctum of the Stars
+		points[111] = {
+			[56208180] = 12404, -- Scryer's Tier
+		}
+	end
+
+	-- hated by Scryers
+	if standingWithScryers <= 4 then
+		points[104][61002820] = 12409 -- Altar of Sha'tar
+		points[111] = {
+			[28104900] = 12404, -- Aldor Rise
+		}
 	end
 
 	for continentMapID in next, continents do
