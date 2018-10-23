@@ -38,6 +38,7 @@ local notes = {
 	[28954] = "Speak to Zidormi if you can't find the bucket.", -- Refuge Pointe, Alliance
 	[28959] = "Speak to Zidormi if you can't find the bucket.", -- Dreadmaul Hold, Horde
 	[28960] = "Speak to Zidormi if you can't find the bucket.", -- Nethergarde Keep, Alliance
+	[32022] = "On the second floor of The Keggary.",
 	[39657] = "Requires a Tier 3 Garrison.", -- Frostwall/Lunarfall Garrison
 }
 
