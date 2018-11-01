@@ -31,9 +31,14 @@ local continents = {
 }
 
 local notes = {
+	[12331] = "Speak to Zidormi in Darkshore to gain access to Teldrassil.",
+	[12334] = "Speak to Zidormi in Darkshore to gain access to Teldrassil.",
 	[12340] = "If Sentinel Hill is on fire, the bucket will be in the tower. If not, it will be in the inn.",
 	[12349] = "Speak to Zidormi if you can't find the bucket.", -- Theramore Isle, Alliance
+	[12363] = "Speak to Zidormi if you can't find the bucket.", -- Brill, Horde
+	[12368] = "Speak to Zidormi in Tirisfal to gain access to The Undercity.",
 	[12380] = "Speak to Zidormi if you can't find the bucket.", -- Hammerfall, Horde
+	[12401] = "Speak to Zidormi if you can't find the bucket.", -- Cenarion Hold, Silithus
 	[13472] = "Down in the Underbelly Tavern.",
 	[28954] = "Speak to Zidormi if you can't find the bucket.", -- Refuge Pointe, Alliance
 	[28959] = "Speak to Zidormi if you can't find the bucket.", -- Dreadmaul Hold, Horde
