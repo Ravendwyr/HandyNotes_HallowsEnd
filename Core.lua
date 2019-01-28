@@ -221,7 +221,7 @@ local function CheckEventActive()
 			else
 				local hour = tonumber(date("%H"))
 
-				if event.sequenceType == "END" and hour <= event.endTime.hour or event.sequenceType == "START" and hour >= event.startTime.hour then
+				if (event.sequenceType == "END" and hour <= event.endTime.hour) or (event.sequenceType == "START" and hour >= event.startTime.hour) then
 					setEnabled = true
 				else
 					setEnabled = false
