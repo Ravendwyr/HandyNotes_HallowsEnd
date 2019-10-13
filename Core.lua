@@ -48,10 +48,10 @@ local notes = {
 }
 
 -- upvalues
-local C_Timer_NewTicker = _G.C_Timer.NewTicker
 local C_Calendar = _G.C_Calendar
 local C_DateAndTime = _G.C_DateAndTime
 local C_Map = _G.C_Map
+local C_Timer_After = _G.C_Timer.After
 local GameTooltip = _G.GameTooltip
 local GetFactionInfoByID = _G.GetFactionInfoByID
 local GetGameTime = _G.GetGameTime
@@ -243,6 +243,11 @@ local function CheckEventActive()
 	end
 end
 
+local function RepeatingCheck()
+	CheckEventActive()
+	C_Timer_After(60, RepeatingCheck)
+end
+
 
 -- initialise
 function HallowsEnd:OnEnable()
@@ -289,11 +294,16 @@ function HallowsEnd:OnEnable()
 
 	local calendar = C_DateAndTime.GetCurrentCalendarTime()
 	C_Calendar.SetAbsMonth(calendar.month, calendar.year)
+	CheckEventActive()
 
-	C_Timer_NewTicker(15, CheckEventActive)
 	HandyNotes:RegisterPluginDB("HallowsEnd", self, options)
-
 	db = LibStub("AceDB-3.0"):New("HandyNotes_HallowsEndDB", defaults, "Default").profile
+
+	self:RegisterEvent("CALENDAR_UPDATE_EVENT", CheckEventActive)
+	self:RegisterEvent("CALENDAR_UPDATE_EVENT_LIST", CheckEventActive)
+	self:RegisterEvent("ZONE_CHANGED", CheckEventActive)
+
+	C_Timer_After(60, RepeatingCheck)
 end
 
 function HallowsEnd:Refresh(_, questID)
