@@ -6,6 +6,7 @@
 ## X-Category: Map & Minimap
 ## SavedVariables: HandyNotes_HallowsEndDB
 ## RequiredDeps: HandyNotes
+## X-Curse-Project-ID: 46114
 
 Core.lua
 
