@@ -4,6 +4,7 @@ Marks the locations of Hallow's End candy buckets on the worldmap and minimap.
 
 [![Twitter](https://img.shields.io/twitter/follow/ravendwyr.svg?label=Twitter&style=popout)](https://twitter.com/Ravendwyr)
 [![Discord](https://img.shields.io/discord/299308204393889802.svg?label=Discord&style=popout)](https://discord.gg/XC2REFu)
+[![Builder](https://img.shields.io/travis/com/ravendwyr/handynotes_hallowsend.svg?label=Build&style=popout)](https://travis-ci.com/Ravendwyr/HandyNotes_HallowsEnd)
 [![Version](https://img.shields.io/github/tag-date/ravendwyr/handynotes_hallowsend.svg?label=Version&style=popout)](https://www.curseforge.com/wow/addons/handynotes_hallowsend/files/all)
 [![Tracker](https://img.shields.io/github/issues/ravendwyr/handynotes_hallowsend.svg?label=Issues&style=popout)](https://github.com/Ravendwyr/HandyNotes_HallowsEnd/issues)
 
