@@ -48,21 +48,18 @@ local notes = {
 }
 
 -- upvalues
-local _G = getfenv(0)
-
 local C_Timer_NewTicker = _G.C_Timer.NewTicker
 local C_Calendar = _G.C_Calendar
+local C_DateAndTime = _G.C_DateAndTime
+local C_Map = _G.C_Map
 local GameTooltip = _G.GameTooltip
 local GetFactionInfoByID = _G.GetFactionInfoByID
 local GetGameTime = _G.GetGameTime
 local GetQuestsCompleted = _G.GetQuestsCompleted
-local gsub = _G.string.gsub
 local IsControlKeyDown = _G.IsControlKeyDown
 local LibStub = _G.LibStub
-local next = _G.next
 local UIParent = _G.UIParent
-local WorldMapButton = _G.WorldMapButton
-local WorldMapTooltip = _G.WorldMapTooltip
+local UnitFactionGroup = _G.UnitFactionGroup
 
 local HandyNotes = _G.HandyNotes
 local TomTom = _G.TomTom
@@ -74,35 +71,30 @@ local points = HallowsEnd.points
 -- plugin handler for HandyNotes
 function HallowsEnd:OnEnter(mapFile, coord)
 	local point = points[mapFile] and points[mapFile][coord]
-	local tooltip = self:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
 
 	if self:GetCenter() > UIParent:GetCenter() then -- compare X coordinate
-		tooltip:SetOwner(self, "ANCHOR_LEFT")
+		GameTooltip:SetOwner(self, "ANCHOR_LEFT")
 	else
-		tooltip:SetOwner(self, "ANCHOR_RIGHT")
+		GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 
-	tooltip:SetText("Candy Bucket")
+	GameTooltip:SetText("Candy Bucket")
 
 	if notes[point] then
-		tooltip:AddLine(notes[point])
-		tooltip:AddLine(" ")
+		GameTooltip:AddLine(notes[point])
+		GameTooltip:AddLine(" ")
 	end
 
 	if TomTom then
-		tooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
-		tooltip:AddLine("Control-Right-click to set waypoints to every bucket.", 1, 1, 1)
+		GameTooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
+		GameTooltip:AddLine("Control-Right-click to set waypoints to every bucket.", 1, 1, 1)
 	end
 
-	tooltip:Show()
+	GameTooltip:Show()
 end
 
 function HallowsEnd:OnLeave()
-	if self:GetParent() == WorldMapButton then
-		WorldMapTooltip:Hide()
-	else
 		GameTooltip:Hide()
-	end
 end
 
 
@@ -112,11 +104,11 @@ local function createWaypoint(mapID, coord)
 end
 
 local function createAllWaypoints()
-	for mapID, coords in next, points do
+	for mapFile, coords in next, points do
 		if not continents[mapFile] then
 		for coord, questID in next, coords do
 			if coord and (db.completed or not completedQuests[questID]) then
-				createWaypoint(mapID, coord)
+				createWaypoint(mapFile, coord)
 			end
 		end
 		end
@@ -151,7 +143,7 @@ do
 		end
 	end
 
-	function HallowsEnd:GetNodes2(mapID, minimap)
+	function HallowsEnd:GetNodes2(mapID)
 		return iterator, points[mapID]
 	end
 end
@@ -204,7 +196,7 @@ local options = {
 -- check
 local setEnabled = false
 local function CheckEventActive()
-	local calendar = C_Calendar.GetDate()
+	local calendar = C_DateAndTime.GetCurrentCalendarTime()
 	local month, day, year = calendar.month, calendar.monthDay, calendar.year
 
 	local monthInfo = C_Calendar.GetMonthInfo()
@@ -295,7 +287,7 @@ function HallowsEnd:OnEnable()
 		end
 	end
 
-	local calendar = C_Calendar.GetDate()
+	local calendar = C_DateAndTime.GetCurrentCalendarTime()
 	C_Calendar.SetAbsMonth(calendar.month, calendar.year)
 
 	C_Timer_NewTicker(15, CheckEventActive)
