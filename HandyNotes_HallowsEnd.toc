@@ -7,7 +7,7 @@
 ## SavedVariables: HandyNotes_HallowsEndDB
 ## RequiredDeps: HandyNotes
 ## X-Curse-Project-ID: 46114
-## X-Wago-ID: XrNkjlGa
+## X-Wago-ID: Rn6VDWGd
 
 Core.lua
 
