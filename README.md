@@ -2,7 +2,7 @@
 
 Marks the locations of Hallow's End candy buckets on the worldmap and minimap.
 
-[![Builder](https://img.shields.io/github/workflow/status/ravendwyr/handynotes_hallowsend/Upload?label=Build&logo=github+actions&style=flat-square)](https://github.com/Ravendwyr/HandyNotes_HallowsEnd/actions)
+[![Builder](https://img.shields.io/github/actions/workflow/status/ravendwyr/handynotes_hallowsend/upload.yml?branch=master&label=Build&logo=github+actions&style=flat-square)](https://github.com/Ravendwyr/HandyNotes_HallowsEnd/actions)
 [![Version](https://img.shields.io/github/v/tag/ravendwyr/handynotes_hallowsend?label=Version&logo=curseforge&style=flat-square)](https://www.curseforge.com/wow/addons/handynotes_hallowsend/files/all)
 [![Tracker](https://img.shields.io/github/issues/ravendwyr/handynotes_hallowsend?label=Issues&logo=github&style=flat-square)](https://github.com/Ravendwyr/HandyNotes_HallowsEnd/issues)
 
@@ -32,10 +32,10 @@ This addon should work for everyone regardless of language, but most of the text
 ### Support
 
 [![Twitter](https://img.shields.io/twitter/follow/ravendwyr?label=Twitter&logo=twitter&style=flat-square)](https://twitter.com/Ravendwyr)
+[![Twooter](https://img.shields.io/mastodon/follow/109293526491740392?domain=https://meow.social&label=Mastodon&logo=mastodon&style=flat-square)](https://meow.social/@ravendwyr)
 [![Discord](https://img.shields.io/discord/299308204393889802?label=Discord&logo=discord&style=flat-square)](https://top.gg/servers/299308204393889802)
-[![Sponsor](https://img.shields.io/github/sponsors/ravendwyr?label=Sponsors&logo=github+sponsors&style=flat-square)](https://github.com/sponsors/Ravendwyr)
 
 [![Twitch](https://img.shields.io/badge/Twitch-subscribe-yellow?&logo=twitch&style=flat-square)](https://www.twitch.tv/subs/ravendwyr)
-[![Crypto](https://img.shields.io/badge/ETH-send-yellow?&logo=ethereum&style=flat-square)](https://etherscan.io/address/0x332224Ed82264298B3DC68dAcf643E8Df4abDCC3)
+[![GitHub](https://img.shields.io/badge/GitHub-sponsor-yellow?logo=github+sponsors&style=flat-square)](https://github.com/sponsors/Ravendwyr)
 [![PayPal](https://img.shields.io/badge/PayPal-donate-yellow?logo=paypal&style=flat-square)](https://www.paypal.me/Ravendwyr/5gbp)
 [![Coffee](https://img.shields.io/badge/Kofi-buy-yellow?logo=ko-fi&style=flat-square)](https://ko-fi.com/Ravendwyr)
