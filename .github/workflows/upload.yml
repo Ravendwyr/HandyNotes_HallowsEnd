@@ -12,13 +12,13 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - name: Download Repository
-        uses: actions/checkout@v3.2.0
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
         with:
           fetch-depth: 20
 
-      - name: Create Package
-        uses: BigWigsMods/packager@v2.1.0
+      - name: WoW Packager
+        uses: BigWigsMods/packager@v2.3.1
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
