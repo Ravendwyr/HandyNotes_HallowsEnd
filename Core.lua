@@ -16,8 +16,6 @@ HallowsEnd.points = {}
 local db
 local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha = 0.8 } }
 
-local standingWithAldor, standingWithScryers
-
 local continents = {
 	[12]  = true, -- Kalimdor
 	[13]  = true, -- Eastern Kingdoms
@@ -263,19 +261,17 @@ function HallowsEnd:OnEnable()
 	end
 
 	-- special treatment for Aldor/Scryers
-	_, _, standingWithAldor = GetFactionInfoByID(932)
-	_, _, standingWithScryers = GetFactionInfoByID(934)
+	local aldor   = C_Reputation.GetFactionDataByID(932)
+	local scryers = C_Reputation.GetFactionDataByID(934)
 
-	-- hated by Aldor
-	if standingWithAldor <= 4 then
-		points[104][56305980] = 12409 -- Sanctum of the Stars
-		points[111][56208180] = 12404 -- Scryer's Tier
-	end
-
-	-- hated by Scryers
-	if standingWithScryers <= 4 then
+	if aldor.reaction >= 4 then
 		points[104][61002820] = 12409 -- Altar of Sha'tar
 		points[111][28104900] = 12404 -- Aldor Rise
+	end
+
+	if scryers.reaction >= 4 then
+		points[104][56305980] = 12409 -- Sanctum of the Stars
+		points[111][56208180] = 12404 -- Scryer's Tier
 	end
 
 	for continentMapID in next, continents do
@@ -285,7 +281,7 @@ function HallowsEnd:OnEnable()
 			if coords then
 				for coord, criteria in next, coords do
 					local mx, my = HandyNotes:getXY(coord)
-					local cx, cy = HereBeDragons:TranslateZoneCoordinates(mx, my, map.mapID, continentMapID)
+					local cx, cy = HereBeDragons:TranslateZoneCoordinates(mx, my, map.mapID, continentMapID, false)
 					if cx and cy then
 						points[continentMapID] = points[continentMapID] or {}
 						points[continentMapID][HandyNotes:getCoord(cx, cy)] = criteria
