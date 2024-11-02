@@ -322,10 +322,10 @@ points[422] = { -- "DreadWastes"
 }
 
 points[418] = { -- "Krasarang"
-	[53447649] = 32034, -- Marista
-	[79830072] = 32036, -- Zhu's Watch
-	[63802039] = 32047, -- Thunder Cleft
-	[28524791] = 32020, -- Dawnchaser Retreat
+	[51407729] = 32034, -- Marista's Bait & Brew
+	[75900687] = 32036, -- Zhu's Watch
+	[61032514] = 32047, -- Thunder Cleft (Horde)
+	[28255074] = 32020, -- Dawnchaser Retreat (Horde)
 }
 
 points[379] = { -- "KunLaiSummit"
@@ -352,8 +352,8 @@ points[371] = { -- "TheJadeForest"
 	[45774360] = 32027, -- Dawn's Blossom
 	[48093462] = 32029, -- Greenstone Village
 	[54606333] = 32032, -- Jade Temple Grounds
-	[28451327] = 32050, -- Honeydew Village
-	[28014738] = 32028, -- Grookin Hill
+	[28451327] = 32050, -- Honeydew Village (Horde)
+	[28014738] = 32028, -- Grookin Hill (Horde)
 	[55712441] = 32031, -- Sri-La Village
 	[41682314] = 32021, -- Tian Monastery
 }
@@ -391,4 +391,108 @@ points[525] = { -- "FrostfireRidge"
 points[627] = { -- "Dalaran70"
 	[47954177] = 43055, -- The Ledgerdemain Lounge
 	[67042940] = 43057, -- Windrunner's Sanctuary
+}
+
+
+------------------
+-- Dragon Isles --
+------------------
+points[2023] = { -- "Ohn'ahran Plains"
+	[46224060] = 75684, -- Broadhoof Outpost
+	[66242453] = 75693, -- Emberwatch
+	[72148039] = 75692, -- Forkriver Crossing
+	[62934057] = 75685, -- Maruukai
+	[57147672] = 75687, -- Ohn'iri Springs
+	[81295920] = 75688, -- Pinewood Post
+	[85853536] = 75689, -- Rusza'thar Reach
+	[28646057] = 75686, -- Shady Sanctuary (Greenscale Inn)
+	[41916043] = 75691, -- Teerakai
+	[85042603] = 75690, -- Timberstep Outpost
+}
+
+points[2025] = { -- "Thaldraszus"
+	[50084273] = 75698, -- Algeth'era Court (The Late Night Lab)
+	[35087921] = 75696, -- Garden Shrine
+	[52406981] = 75697, -- Gelikyr Post
+	[59858269] = 75695, -- Temporal Conflux
+}
+
+points[2024] = { -- "The Azure Span"
+	[47034026] = 75667, -- Camp Antonidas (Mage's Rest)
+	[62785773] = 75668, -- Camp Nowhere (Mulsted's Marquee)
+	[12394935] = 75669, -- Iskaara
+	[65501625] = 75670, -- Theron's Watch
+	[18812455] = 75671, -- Three-Falls Lookout (The Missing Hinge Inn)
+}
+
+points[2151] = { -- "The Forbidden Reach"
+	[33835880] = 75702, -- Morqut Village
+}
+
+points[2022] = { -- "The Waking Shores"
+	[24468210] = 75672, -- Apex Observatory
+	[47678330] = 75673, -- Dragonscale Basecamp
+	[65225793] = 75675, -- Life Vault Ruins
+	[43116666] = 77698, -- Obsidian Bulwark
+	[25775518] = 75676, -- Obsidian Throne
+	[58036731] = 75674, -- Ruby Lifeshine
+	[76075475] = 75677, -- Skytop Observatory
+	[53913904] = 75678, -- Uktulut Backwater
+	[46442741] = 75679, -- Uktulut Pier
+	[76213541] = 75683, -- Wingrest Embassy
+	[80422788] = 75682, -- Wild Coast (Horde)
+}
+
+points[2112] = { -- "Valdraaken"
+	[72374669] = 75700, -- The Parting Glass
+	[47134540] = 75699, -- The Roasted Ram
+	[22353086] = 75701, -- Weyrnrest
+}
+
+points[2133] = { -- "Zaralek Cavern"
+	[56375635] = 75704, -- Loamm
+	[52122647] = 75703, -- Obsidian Rest
+}
+
+
+----------------
+-- Khaz Algar --
+----------------
+points[2248] = { -- "Isle of Dorn"
+	[58172711] = 84567, -- Rambleshire
+	[41997437] = 84566, -- Freywold Village
+}
+
+points[2339] = { -- "Dornogal"
+	[45014731] = 84564, -- Dornogal
+}
+
+points[2214] = { -- "The Ringing Depths"
+	[47893209] = 84569, -- Gundargaz
+	[61874627] = 84571, -- Shadowvein Point
+	[59466408] = 84568, -- Camp Murroch
+	[63417898] = 84570, -- Opportunity Point
+}
+
+points[2215] = { -- "Hallowfall"
+	[42765571] = 84575, -- Mereldar
+	[69064571] = 84572, -- Dunnelle's Kindess (Dunelle's Rest)
+	[49133953] = 84573, -- Lorel's Crossing (Fjord Tavern)
+	[40576800] = 84574, -- Light's Redoubt
+}
+
+points[2255] = { -- "Azj-Kahet"
+	[58961862] = 84579, -- Faerin's Advance
+	[56863897] = 84582, -- Weaver's Lair (The Trap Door)
+	[77956277] = 84580, -- Mmarl (Rock Bottom Inn)
+	[44856626] = 84581, -- Wildcamp Ul'ar
+}
+
+points[2216] = { -- "City of Threads"
+	[57453850] = 84577, -- The Burrows, Lower City (The Cobwebs)
+	[62044136] = 84576, -- High Hollows
+}
+
+points[2213] = { -- "City of Threads, Umbral Bazaar"
+	[49742225] = 84578, -- Umbral Bazaar (The Skittering Lounge)
 }
