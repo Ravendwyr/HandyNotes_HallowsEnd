@@ -54,11 +54,11 @@ local notes = {
 -- upvalues
 local C_Calendar = _G.C_Calendar
 local C_DateAndTime = _G.C_DateAndTime
-local C_QuestLog = _G.C_QuestLog
 local C_Map = _G.C_Map
+local C_QuestLog = _G.C_QuestLog
+local C_Reputation = _G.C_Reputation
 local C_Timer_After = _G.C_Timer.After
 local GameTooltip = _G.GameTooltip
-local GetFactionInfoByID = _G.GetFactionInfoByID
 local IsControlKeyDown = _G.IsControlKeyDown
 local UIParent = _G.UIParent
 local UnitFactionGroup = _G.UnitFactionGroup
@@ -268,12 +268,12 @@ function HallowsEnd:OnEnable()
 	local aldor   = C_Reputation.GetFactionDataByID(932)
 	local scryers = C_Reputation.GetFactionDataByID(934)
 
-	if aldor.reaction >= 4 then
+	if aldor and aldor.reaction >= 4 then
 		points[104][61002820] = 12409 -- Altar of Sha'tar
 		points[111][28104900] = 12404 -- Aldor Rise
 	end
 
-	if scryers.reaction >= 4 then
+	if scryers and scryers.reaction >= 4 then
 		points[104][56305980] = 12409 -- Sanctum of the Stars
 		points[111][56208180] = 12404 -- Scryer's Tier
 	end
