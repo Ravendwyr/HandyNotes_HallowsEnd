@@ -17,18 +17,21 @@ local db
 local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha = 0.8 } }
 
 local continents = {
-	[12]  = true, -- Kalimdor
-	[13]  = true, -- Eastern Kingdoms
-	[101] = true, -- Outland
-	[113] = true, -- Northrend
-	[203] = true, -- Vashj'ir
-	[224] = true, -- Stranglethorn Vale
-	[424] = true, -- Pandaria
-	[572] = true, -- Draenor
-	[619] = true, -- Broken Isles
-	[875] = true, -- Zandalar
-	[876] = true, -- Kul Tiras
-	[947] = true, -- Azeroth
+	[12]   = true, -- Kalimdor
+	[13]   = true, -- Eastern Kingdoms
+	[101]  = true, -- Outland
+	[113]  = true, -- Northrend
+	[203]  = true, -- Vashj'ir
+	[224]  = true, -- Stranglethorn Vale
+	[424]  = true, -- Pandaria
+	[572]  = true, -- Draenor
+	[619]  = true, -- Broken Isles
+	[875]  = true, -- Zandalar
+	[876]  = true, -- Kul Tiras
+	[947]  = true, -- Azeroth
+	[1978] = true, -- Dragon Isles
+	[2025] = true, -- Thaldraszus
+	[2274] = true, -- Khaz Algar
 }
 
 local notes = {
