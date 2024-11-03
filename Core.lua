@@ -8,7 +8,7 @@
 
 
 -- declaration
-local _, HallowsEnd = ...
+local addOnName, HallowsEnd = ...
 HallowsEnd.points = {}
 
 
@@ -103,19 +103,20 @@ end
 
 local function createWaypoint(mapID, coord)
 	local x, y = HandyNotes:getXY(coord)
-	TomTom:AddWaypoint(mapID, x, y, { title = "Candy Bucket", persistent = nil, minimap = true, world = true })
+	TomTom:AddWaypoint(mapID, x, y, { title = "Candy Bucket", from = addOnName, persistent = false, minimap = true, world = true })
 end
 
 local function createAllWaypoints()
 	for mapFile, coords in next, points do
 		if not continents[mapFile] then
-		for coord, questID in next, coords do
-			if coord and (db.completed or not completedQuests[questID]) then
-				createWaypoint(mapFile, coord)
+			for coord, questID in next, coords do
+				if coord and (db.completed or not completedQuests[questID]) then
+					createWaypoint(mapFile, coord)
+				end
 			end
 		end
-		end
 	end
+
 	TomTom:SetClosestWaypoint()
 end
 
@@ -315,4 +316,4 @@ end
 
 
 -- activate
-LibStub("AceAddon-3.0"):NewAddon(HallowsEnd, "HandyNotes_HallowsEnd", "AceEvent-3.0")
+LibStub("AceAddon-3.0"):NewAddon(HallowsEnd, addOnName, "AceEvent-3.0")
