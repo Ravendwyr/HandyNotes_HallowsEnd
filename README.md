@@ -2,7 +2,9 @@
 
 Marks the locations of Hallow's End candy buckets on the worldmap and minimap.
 
-[![Builder](https://img.shields.io/github/actions/workflow/status/ravendwyr/handynotes_hallowsend/upload.yml?branch=master&label=Build&logo=github+actions&style=flat-square)](https://github.com/Ravendwyr/HandyNotes_HallowsEnd/actions)
+[![Release](https://cf.way2muchnoise.eu/46114.svg)](https://www.curseforge.com/wow/addons/handynotes_hallowsend)
+
+[![Builder](https://img.shields.io/github/actions/workflow/status/ravendwyr/handynotes_hallowsend/upload.yml?branch=master&label=Build&logo=github-actions&style=flat-square)](https://github.com/Ravendwyr/HandyNotes_HallowsEnd/actions)
 [![Version](https://img.shields.io/github/v/tag/ravendwyr/handynotes_hallowsend?label=Version&logo=curseforge&style=flat-square)](https://www.curseforge.com/wow/addons/handynotes-hallowsend/files/all)
 [![Tracker](https://img.shields.io/github/issues/ravendwyr/handynotes_hallowsend?label=Issues&logo=github&style=flat-square)](https://github.com/Ravendwyr/HandyNotes_HallowsEnd/issues)
 
@@ -31,7 +33,10 @@ This addon should work for everyone regardless of language, but most of the text
 
 ### Support
 
-[![Linktree](https://img.shields.io/badge/Linktree-socials-yellow?style=flat-square&logo=linktree)](https://linktr.ee/ravendwyr)
+[![Twitch](https://img.shields.io/twitch/status/ravendwyr?style=flat-square&logo=twitch&label=Twitch)](https://www.twitch.tv/ravendwyr)
+[![Bluesky](https://img.shields.io/bluesky/followers/ravendwyr.bsky.social?style=flat-square&logo=bluesky&label=Bluesky)](https://bsky.app/profile/ravendwyr.bsky.social)
+[![Mastodon](https://img.shields.io/mastodon/follow/110671875370528026?domain=https://gamepad.club&style=flat-square&logo=mastodon&label=Mastodon)](https://gamepad.club/@ravendwyr)
 
+[![GitHub](https://img.shields.io/badge/GitHub-sponsor-yellow?style=flat-square&logo=github-sponsors)](https://github.com/sponsors/Ravendwyr)
 [![Twitch](https://img.shields.io/badge/Twitch-subscribe-yellow?style=flat-square&logo=twitch)](https://www.twitch.tv/subs/ravendwyr)
-[![KoFi](https://img.shields.io/badge/KoFi-support-yellow?style=flat-square&logo=kofi)](https://ko-fi.com/Ravendwyr)
+[![Coffee](https://img.shields.io/badge/KoFi-support-yellow?style=flat-square&logo=kofi)](https://ko-fi.com/Ravendwyr)
