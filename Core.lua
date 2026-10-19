@@ -32,6 +32,8 @@ local continents = {
 	[1978] = true, -- Dragon Isles
 	[2025] = true, -- Thaldraszus
 	[2274] = true, -- Khaz Algar
+	[2395] = true, -- Eversong Woods
+	[2537] = true, -- Quel'Thalas
 }
 
 local notes = {
