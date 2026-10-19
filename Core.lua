@@ -200,6 +200,8 @@ local options = {
 -- check
 local setEnabled = false
 local function CheckEventActive()
+	if C_ChatInfo.InChatMessagingLockdown() then return end
+
 	local calendar = C_DateAndTime.GetCurrentCalendarTime()
 	local month, day, year = calendar.month, calendar.monthDay, calendar.year
 	local hour, minute = calendar.hour, calendar.minute
