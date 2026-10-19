@@ -105,21 +105,21 @@ end
 
 local function createWaypoint(mapID, coord)
 	local x, y = HandyNotes:getXY(coord)
-	TomTom:AddWaypoint(mapID, x, y, { title = "Candy Bucket", from = addOnName, persistent = false, minimap = true, world = true })
+
+	TomTom:AddWaypoint(mapID, x, y, { title = "Candy Bucket", from = addOnName, arrivaldistance = 10, cleardistance = 5, minimap = true, world = true })
+	TomTom:SetClosestWaypoint()
 end
 
 local function createAllWaypoints()
 	for mapFile, coords in next, points do
 		if not continents[mapFile] then
 			for coord, questID in next, coords do
-				if coord and (db.completed or not completedQuests[questID]) then
+				if coord and (db.completed or not completedQuests[tonumber(questID)]) then
 					createWaypoint(mapFile, coord)
 				end
 			end
 		end
 	end
-
-	TomTom:SetClosestWaypoint()
 end
 
 function HallowsEnd:OnClick(button, down, mapFile, coord)
