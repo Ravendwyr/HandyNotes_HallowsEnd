@@ -83,23 +83,23 @@ function HallowsEnd:OnEnter(mapFile, coord)
 		GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 
-	GameTooltip:SetText("Candy Bucket")
+	GameTooltip:SetText("Candy Bucket", 1, 1, 1)
 
 	if notes[point] then
 		GameTooltip:AddLine(notes[point])
-		GameTooltip:AddLine(" ")
 	end
 
 	if TomTom then
-		GameTooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
-		GameTooltip:AddLine("Control-Right-click to set waypoints to every bucket.", 1, 1, 1)
+		GameTooltip:AddLine(" ")
+		GameTooltip:AddLine("Right-click to set a waypoint.")
+		GameTooltip:AddLine("Control-Right-click to set waypoints to every bucket.")
 	end
 
 	GameTooltip:Show()
 end
 
 function HallowsEnd:OnLeave()
-		GameTooltip:Hide()
+	GameTooltip:Hide()
 end
 
 
