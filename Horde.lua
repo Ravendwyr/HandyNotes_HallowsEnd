@@ -10,6 +10,7 @@ local points = HallowsEnd.points
 ----------------------
 -- Eastern Kingdoms --
 ----------------------
+
 points[14] = { -- "Arathi"
 	[69023327] = 12380, -- Hammerfall
 }
@@ -91,6 +92,7 @@ points[22] = { -- "WesternPlaguelands"
 --------------
 -- Kalimdor --
 --------------
+
 points[63] = { -- "Ashenvale"
 	[73906070] = 12377, -- Splintertree Post
 	[50206720] = 28953, -- Silverwind Refuge
@@ -138,6 +140,7 @@ points[7] = { -- "Mulgore"
 }
 
 points[85] = { -- "Orgrimmar"
+	[50763648] = 29019, -- Temple of Earth, Deepholm
 	[53807880] = 12366, -- The Valley of Strength
 }
 
@@ -176,6 +179,7 @@ points[83] = { -- "Winterspring"
 -------------
 -- Outland --
 -------------
+
 points[105] = { -- "BladesEdgeMountains"
 	[53405550] = 12393, -- Thunderlord Stronghold
 	[76206040] = 12394, -- Mok'Nathal Village
@@ -216,6 +220,7 @@ points[102] = { -- "Zangarmarsh"
 ---------------
 -- Northrend --
 ---------------
+
 points[114] = { -- "BoreanTundra"
 	[78454915] = 13460, -- Unu'pe
 	[76663747] = 13467, -- Taunka'le Village
@@ -278,6 +283,7 @@ points[121] = { -- "ZulDrak"
 ---------------
 -- Cataclysm --
 ---------------
+
 points[207] = { -- "Deepholm"
 	[51205000] = 29019, -- Temple of Earth
 }
@@ -316,6 +322,7 @@ points[205] = { -- "VashjirRuins"
 --------------
 -- Pandaria --
 --------------
+
 points[422] = { -- "DreadWastes"
 	[55217120] = 32023, -- Soggy's Gamble
 	[55933227] = 32024, -- Klaxxi'vess
@@ -376,6 +383,7 @@ points[376] = { -- "ValleyoftheFourWinds"
 -------------
 -- Draenor --
 -------------
+
 points[590] = { -- "garrisonffhorde_tier3"
 	[47083791] = 39657, -- Frostwall Garrison
 }
@@ -388,6 +396,7 @@ points[525] = { -- "FrostfireRidge"
 ------------------
 -- Broken Isles --
 ------------------
+
 points[627] = { -- "Dalaran70"
 	[47954177] = 43055, -- The Ledgerdemain Lounge
 	[67042940] = 43057, -- Windrunner's Sanctuary
@@ -397,6 +406,7 @@ points[627] = { -- "Dalaran70"
 ------------------
 -- Dragon Isles --
 ------------------
+
 points[2023] = { -- "Ohn'ahran Plains"
 	[46224060] = 75684, -- Broadhoof Outpost
 	[66242453] = 75693, -- Emberwatch
@@ -458,6 +468,7 @@ points[2133] = { -- "Zaralek Cavern"
 ----------------
 -- Khaz Algar --
 ----------------
+
 points[2248] = { -- "Isle of Dorn"
 	[58172711] = 84567, -- Rambleshire
 	[41997437] = 84566, -- Freywold Village
@@ -495,4 +506,47 @@ points[2216] = { -- "City of Threads"
 
 points[2213] = { -- "City of Threads, Umbral Bazaar"
 	[49742225] = 84578, -- Umbral Bazaar (The Skittering Lounge)
+}
+
+
+--------------
+-- Midnight --
+--------------
+
+points[2393] = { -- "Silvermoon City"
+	[55826980] = 97142, -- Wayfarer's Rest
+	[56467086] = 97213, -- The Arcantina
+}
+
+points[2395] = { -- "Eversong Woods"
+	[46424606] = 97143, -- Fairbreeze Village
+	[48986853] = 97148, -- Tranquillien
+}
+
+points[2413] = { -- "Harandar"
+	[51205320] = 97206, -- The Den
+	[30926503] = 97207, -- Har'alnor
+	[69045170] = 97155, -- Har'athir
+	[66152450] = 97154, -- Har'kuai
+	[35072280] = 97208, -- Har'mara
+}
+
+points[2437] = { -- "Zul'Aman"
+	[45316514] = 97150, -- Amani'Zar
+	[46572585] = 97151, -- Camp Stonewash
+	[36882343] = 97152, -- Witherbark Bluffs
+}
+
+points[2405] = { -- "Voidstorm"
+	[41747462] = 97209, -- Locus Point
+	[35675860] = 97210, -- The Ingress
+	[36802940] = 97212, -- Hate Spire
+}
+
+points[2444] = { -- "Slayers' Rise"
+	[21325542] = 97212, -- Hate Spire
+}
+
+points[2576] = { -- "The Den"
+	[24826382] = 97206, -- The Den
 }
