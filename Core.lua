@@ -51,6 +51,9 @@ local notes = {
 	[28960] = "Speak to Zidormi if you can't find the bucket.", -- Nethergarde Keep, Alliance
 	[32022] = "On the second floor of The Keggary.",
 	[39657] = "Requires a Tier 3 Garrison.", -- Frostwall/Lunarfall Garrison
+	[84576] = "High Hollows (Acquired Tastes)",
+	[84577] = "The Burrows (The Cobwebs)",
+	[84578] = "Umbral Bazaar (The Skittering Lounge)",
 }
 
 -- upvalues

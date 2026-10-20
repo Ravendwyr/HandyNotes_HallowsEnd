@@ -470,6 +470,7 @@ points[2133] = { -- "Zaralek Cavern"
 ----------------
 
 points[2248] = { -- "Isle of Dorn"
+	[48504390] = 84564, -- Dornogal
 	[58172711] = 84567, -- Rambleshire
 	[41997437] = 84566, -- Freywold Village
 }
@@ -478,11 +479,11 @@ points[2339] = { -- "Dornogal"
 	[45014731] = 84564, -- Dornogal
 }
 
-points[2214] = { -- "The Ringing Depths"
-	[47893209] = 84569, -- Gundargaz
-	[61874627] = 84571, -- Shadowvein Point
-	[59466408] = 84568, -- Camp Murroch
-	[63417898] = 84570, -- Opportunity Point
+points[2214] = { -- "The Ringing Deeps"
+	[43733209] = 84569, -- Gundargaz
+	[57704625] = 84571, -- Shadowvein Point
+	[55296409] = 84568, -- Camp Murroch
+	[59277897] = 84570, -- Opportunity Point
 }
 
 points[2215] = { -- "Hallowfall"
@@ -493,19 +494,22 @@ points[2215] = { -- "Hallowfall"
 }
 
 points[2255] = { -- "Azj-Kahet"
+	[53007950] = 84576, -- High Hollows (Acquired Tastes)
+	[51407840] = 84577, -- The Burrows (The Cobwebs)
+	[48707280] = 84578, -- Umbral Bazaar (The Skittering Lounge)
 	[58961862] = 84579, -- Faerin's Advance
 	[56863897] = 84582, -- Weaver's Lair (The Trap Door)
 	[77956277] = 84580, -- Mmarl (Rock Bottom Inn)
 	[44856626] = 84581, -- Wildcamp Ul'ar
 }
 
-points[2216] = { -- "City of Threads"
-	[57453850] = 84577, -- The Burrows, Lower City (The Cobwebs)
-	[62044136] = 84576, -- High Hollows
+points[2213] = { -- "City of Threads"
+	[62044136] = 84576, -- High Hollows (Acquired Tastes)
+	[49742225] = 84578, -- Umbral Bazaar (The Skittering Lounge)
 }
 
-points[2213] = { -- "City of Threads, Umbral Bazaar"
-	[49742225] = 84578, -- Umbral Bazaar (The Skittering Lounge)
+points[2216] = { -- "City of Threads - Lower"
+	[57453850] = 84577, -- The Burrows (The Cobwebs)
 }
 
 
