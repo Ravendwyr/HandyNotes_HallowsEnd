@@ -49,11 +49,14 @@ local notes = {
 	[28954] = "Speak to Zidormi if you can't find the bucket.", -- Refuge Pointe, Alliance
 	[28959] = "Speak to Zidormi if you can't find the bucket.", -- Dreadmaul Hold, Horde
 	[28960] = "Speak to Zidormi if you can't find the bucket.", -- Nethergarde Keep, Alliance
+	[29019] = "Take the portal to Deepholm.",
+	[29020] = "Take the portal to Deepholm.",
 	[32022] = "On the second floor of The Keggary.",
 	[39657] = "Requires a Tier 3 Garrison.", -- Frostwall/Lunarfall Garrison
 	[84576] = "High Hollows (Acquired Tastes)",
 	[84577] = "The Burrows (The Cobwebs)",
 	[84578] = "Umbral Bazaar (The Skittering Lounge)",
+	[97213] = "Take the portal to the Arcantina.",
 }
 
 -- upvalues
